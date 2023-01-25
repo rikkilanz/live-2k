@@ -1,3 +1,3 @@
 <?php
 
-    @include 'public/index.html';
+    include ('public/html/index.php');

@@ -1,10 +1,10 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE 2K | The Puppydog Action Figures</title>
+    <title>LIVE 2K | Login</title>
     <link rel="stylesheet" href="https://use.typekit.net/qln2qjg.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -15,7 +15,7 @@
         <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="nav-bar">
             <li>
-                <a href="/ticket/tickets.php" title="To tickets page">
+                <a href="tickets.php" title="To tickets page">
                     <p>Tickets</p>
                 </a>
             </li>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="artist-page-day1.php" title="To experience page">
+                <a href="../artist-page/artist-page-day1.php" title="To experience page">
                     <p>Lineup</p>
                 </a>
             </li>
@@ -47,34 +47,43 @@
             </li>
         </ul>
     </header>
-    <main>
-        <section class="artist-page">
-            <div class="window">
-                <div class="window-header">
-                    <h3 class="window-title is-small">Artist > The Puppydog Action Figures</h3>
+   <main>
+    <section id="volunteer" class="volunteer vol-confirm">
+        <div class="window">
+            <div class="window-header">
+                <div class="window-title">Signup Confirmed</div>
                     <div class="window-icons">
+                        <div class="img"></div>
                         <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
                         <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
                         <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
-                    <div class="artist-image"><img src="../images/artist-photos/the-puppydog-action-figures.jpg" alt=""></div>
-                    <div class="artist-info">
-                        <h2 class="txt-black">The Puppydog Action Figures</h2>
-                        <p class="artist-blurb">Formed in Los Angeles in 2003, following the trend of burlesque troupe in pop, The Puppydog Action Figures broke into the mainstream with their hit song “Clasp”. They have won a total of 20 awards ranging from EmTV Music Awards to Pillbard’s Top 100s.</p>
-                        <h3 class="txt-black">ALBUMS</h3>
-                        <ul class="artist-albums">
-                            <li><img src="../images/album-covers/the-puppydog-action-figures-album1.jpg" alt=""></li>
-                            <li><img src="../images/album-covers/the-puppydog-action-figures-album2.jpg" alt=""></li>
-                            <li><img src="../images/album-covers/the-puppydog-action-figures-album3.png" alt=""></li>
-                        </ul>
-                        <div class="btn-section">
-                            <a class="btn scale-4" href="../ticket/tickets.php">Get Tickets</a>
+                    <div class="confirm-banner">
+                        <img src="../images/volunteer-confirm-banner.jpg">
+                        <h4>Volunteer Signup Confirmed</h4>
+                    </div>
+                    <div class="vol-confirm-copy">
+                        <p>Thank you so much for signing up to volunteer with LIVE2K!</p>
+                        <p>We have recieved your information. Please check your email for instructions and next steps.</p>
+                        <p>If you have any questions, please email us at: <a href="#">contact@live2k.show</a></p>
+                        <div class="vol-buttons">
+                            <div>
+                                <a href="../index.php">
+                                <div class="submit-btn">Back to Home</div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="../artist-page/artist-page-day1.php">
+                                <div class="submit-btn">Lineups</div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </section>
+            </div>
+        </div>
     </main>
     <footer class="g-footer">
         <div class="nav-logo">
@@ -84,7 +93,7 @@
         </div>
         <ul class="footer-nav-special">
             <li>
-                <a href="../volunteer/volunteer-signup.php">
+                <a href="volunteer-signup.php">
                 <div class="btn">Volunteer Portal</div>
                 </a>
             </li>

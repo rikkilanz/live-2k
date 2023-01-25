@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE 2K | Login</title>
+    <title>LIVE 2K | Thank You!</title>
     <link rel="stylesheet" href="https://use.typekit.net/qln2qjg.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -12,10 +12,10 @@
 <body>
     <div class="bg"></div>
     <header class="g-header">
-        <a href="../index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="nav-bar">
             <li>
-                <a href="tickets.html" title="To tickets page">
+                <a href="tickets.php" title="To tickets page">
                     <p>Tickets</p>
                 </a>
             </li>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="../artist-page/artist-page-day1.html" title="To experience page">
+                <a href="../artist-page/artist-page-day1.php" title="To experience page">
                     <p>Lineup</p>
                 </a>
             </li>
@@ -40,45 +40,42 @@
                         <p>More</p>
                     </a>
                     <div class="dropdown-content">
-                        <a href="../ethos.html">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.html">Volunteer</a>
+                        <a href="../ethos.php">Ethos</a>
+                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
                     </div>
                 </div>
             </li>
         </ul>
     </header>
     <main>
-        <section class="login-portal">
+        <section class="success-section">
             <div class="window">
                 <div class="window-header">
-                    <h3 class="window-title is-small">Log-In</h3>
+                    <h3 class="window-title is-small">PAYMENT SUCCESS!</h3>
                     <div class="window-icons">
                         <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                            <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
+                            <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
-                    <h3 class="txt-black">Login</h3>
-                    <div class="cta-input">
-                        <input type="text" name="" placeholder="Email Address">
-                        <input type="text" name="" placeholder="Password">
+                    <div class="success-head">
+                        <img src="../images/website-assets/check.png" alt="" height="50px">
+                        <h2>Purchase Completed</h2>
                     </div>
-                    <a href="ticket-checkout.html">
-                        <div class="btn scale-4">Login</div>
-                    </a>
-                    <a href="ticket-checkout.html">
-                        <div class="btn2">Sign Up</div>
-                    </a>
-                    <a class="guest-checkout" href="ticket-checkout.html">Checkout as Guest</a>
+                    <h3 class="txt-black">See you at the fest!</h3>
+                    <a>Order No: #1234567890</a>
+                    <p>Thank you for purchasing tickets from us! A receipt for your purchase as well as your digital tickets will be emailed to you shortly.</p>
+                    <div class="button-section"><a class="btn" href="../index.php">Return Home</a></div>
                 </div>
+            </div>
         </section>
     </main>
     <footer class="g-footer">
-        <a href="../index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="footer-nav-special">
             <li>
-                <a href="../volunteer/volunteer-signup.html">
+                <a href="../volunteer/volunteer-signup.php">
                 <div class="btn">Volunteer Portal</div>
                 </a>
             </li>

@@ -12,10 +12,10 @@
 <body>
     <div class="bg"></div>
     <header class="g-header">
-        <a href="index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="nav-bar">
             <li>
-                <a href="..//ticket/tickets.html" title="To tickets page">
+                <a href="..//ticket/tickets.php" title="To tickets page">
                     <p>Tickets</p>
                 </a>
             </li>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="artist-page/artist-page-day1.html" title="To experience page">
+                <a href="artist-page/artist-page-day1.php" title="To experience page">
                     <p>Lineup</p>
                 </a>
             </li>
@@ -40,8 +40,8 @@
                         <p>More</p>
                     </a>
                     <div class="dropdown-content">
-                        <a href="../ethos.html">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.html">Volunteer</a>
+                        <a href="../ethos.php">Ethos</a>
+                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
                     </div>
                 </div>
             </li>
@@ -64,7 +64,7 @@
                         <li class="headliner">
                             <ul>
                                 <li>
-                                    <a href="kanye-east.html">
+                                    <a href="kanye-east.php">
                                         <div class="artist-container">
                                             <div class="artist-image-1"><img src="../images/artist-photos/kanye-east.png" alt=""></div>
                                             <h3 class="txt-black">Kanye East</h3>
@@ -72,7 +72,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="britney-s-pearce.html">
+                                    <a href="britney-s-pearce.php">
                                         <div class="artist-container">
                                             <div class="artist-image-1"><img src="../images/artist-photos/britney-s-pearce.png" alt=""></div>
                                             <h3 class="txt-black">Britney S. Pearce</h3>
@@ -84,7 +84,7 @@
                         <li class="sub-headliner">
                             <ul>
                                 <li>
-                                    <a href="paft-dunk.html">
+                                    <a href="paft-dunk.php">
                                         <div class="artist-container">
                                             <div class="artist-image-2"><img src="../images/artist-photos/paft-dunk.png" alt=""></div>
                                             <h3 class="txt-black">Paft Dunk</h3>
@@ -92,7 +92,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="the-alleyway-guys.html">
+                                    <a href="the-alleyway-guys.php">
                                         <div class="artist-container">
                                             <div class="artist-image-2"><img src="../images/artist-photos/the-alleyway-guys.png" alt=""></div>
                                             <h3 class="txt-black">The Alley Guys</h3>
@@ -100,7 +100,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="the-mice-girls.html">
+                                    <a href="the-mice-girls.php">
                                         <div class="artist-container">
                                             <div class="artist-image-2"><img src="../images/artist-photos/the-mice-girls.jpg" alt=""></div>
                                             <h3 class="txt-black">The Mice Girls</h3>
@@ -265,7 +265,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="artist-page-day1.html" class="next-day">
+                    <a href="artist-page-day1.php" class="next-day">
                         <h4>CHECK OUT DAY 2 HERE</h4>
                     </a>
                 </div>
@@ -274,13 +274,13 @@
     </main>
     <footer class="g-footer">
         <div class="nav-logo">
-            <a href="index.html">
+            <a href="index.php">
             <img src="../images/live2k_Logo_final.png" alt="live 2k logo" width="250" height="auto">
             </a>
         </div>
         <ul class="footer-nav-special">
             <li>
-                <a href="../volunteer/volunteer-signup.html">
+                <a href="../volunteer/volunteer-signup.php">
                 <div class="btn">Volunteer Portal</div>
                 </a>
             </li>

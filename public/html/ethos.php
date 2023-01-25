@@ -16,10 +16,10 @@
 <body>
     <div class="bg"></div>
     <header class="g-header">
-        <a href="index.html"><img src="images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="index.php"><img src="images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="nav-bar">
             <li>
-                <a href="tickets.html">
+                <a href="tickets.php">
                     <p>Tickets</p>
                 </a>
             </li>
@@ -29,7 +29,7 @@
                 </a>
             </li>
             <li>
-                <a href="artist-page-2.html">
+                <a href="artist-page-2.php">
                     <p>Lineup</p>
                 </a>
             </li>
@@ -44,8 +44,8 @@
                         <p>More</p>
                     </a>
                     <div class="dropdown-content">
-                        <a href="ethos.html">Ethos</a>
-                        <a href="volunteer-signup.html">Volunteer</a>
+                        <a href="ethos.php">Ethos</a>
+                        <a href="volunteer-signup.php">Volunteer</a>
                     </div>
                 </div>
             </li>
@@ -92,13 +92,13 @@
     </main>
     <footer class="g-footer">
         <div class="nav-logo">
-            <a href="index.html">
+            <a href="index.php">
             <img src="images/live2k_Logo_final.png" alt="live 2k logo" width="250" height="auto">
             </a>
         </div>
         <ul class="footer-nav-special">
             <li>
-                <a href="/volunteer/volunteer-signup.html">
+                <a href="/volunteer/volunteer-signup.php">
                 <div class="btn">Volunteer Portal</div>
                 </a>
             </li>

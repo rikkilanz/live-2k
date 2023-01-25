@@ -1,59 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE 2K</title>
-    <link rel="stylesheet" href="https://use.typekit.net/qln2qjg.css">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
+<html lang="en-CA">
+<?php include('public\partials\head.php'); ?>
 <body>
     <div class="bg"></div>
-    <header class="g-header">
-        <a href="index.html"><img src="images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
-        <ul class="nav-bar">
-            <li>
-                <a href="/ticket/tickets.html" title="To tickets page">
-                    <p>Tickets</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To experience page">
-                    <p>Experience</p>
-                </a>
-            </li>
-            <li>
-                <a href="artist-page/artist-page-day1.html" title="To experience page">
-                    <p>Lineup</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To forum page">
-                    <p>The 411</p>
-                </a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <a class="dropbtn" href="#">
-                        <p>More</p>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="ethos.html">Ethos</a>
-                        <a href="volunteer/volunteer-signup.html">Volunteer</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </header>
+    <?php include('../../partials/header.php'); ?>
    <main>
     <section class="hero-navigation">
         <div class="hero-nav-list">
             <img src="images/live2k_Logo_final.png" alt="live 2k logo" class="hero-logo">
             <ul class="hero-nav">
                 <li>
-                    <a href="ticket/tickets.html" title="To tickets page">
+                    <a href="tickets.php" title="To tickets page">
                         <div class="nav-link">
                             <img src="images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
                             <p>Tickets</p>
@@ -69,7 +26,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="artist-page/artist-page-day1.html" title="To lineup page">
+                    <a href="artist-page/artist-page-day1.php" title="To lineup page">
                         <div class="nav-link">
                             <img src="images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
                             <p>Lineup</p>
@@ -121,7 +78,7 @@
             </div> -->
             <img src="/images/poster-final.png" alt="">
         </div>
-        <a class="btn scale-4" href="ticket/tickets.html">Get Tickets</a>
+        <a class="btn scale-4" href="ticket/tickets.php">Get Tickets</a>
     </section>
     <section class="hero-sponsors">
         <h2>Our Sponsors</h2>
@@ -196,13 +153,13 @@
    </main>
    <footer class="g-footer">
     <div class="nav-logo">
-        <a href="index.html">
+        <a href="index.php">
         <img src="images/live2k_Logo_final.png" alt="live 2k logo" width="250" height="auto">
         </a>
     </div>
     <ul class="footer-nav-special">
         <li>
-            <a href="/volunteer/volunteer-signup.html">
+            <a href="/volunteer/volunteer-signup.php">
             <div class="btn">Volunteer Portal</div>
             </a>
         </li>

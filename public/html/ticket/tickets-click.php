@@ -12,10 +12,10 @@
 <body>
     <div class="bg"></div>
     <header class="g-header">
-        <a href="../index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="nav-bar">
             <li>
-                <a href="tickets.html" title="To tickets page">
+                <a href="tickets.php" title="To tickets page">
                     <p>Tickets</p>
                 </a>
             </li>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="../artist-page/artist-page-day1.html" title="To experience page">
+                <a href="../artist-page/artist-page-day1.php" title="To experience page">
                     <p>Lineup</p>
                 </a>
             </li>
@@ -40,8 +40,8 @@
                         <p>More</p>
                     </a>
                     <div class="dropdown-content">
-                        <a href="../ethos.html">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.html">Volunteer</a>
+                        <a href="../ethos.php">Ethos</a>
+                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
                     </div>
                 </div>
             </li>
@@ -62,8 +62,8 @@
                     <div class="window-content">
                         <p>Ready to checkout?</p>
                         <div class="buttons">
-                            <a href="tickets.html" class="btn2">Add More Tickets</a>
-                            <a href="login.html" class="btn">Check Me Out!</a>
+                            <a href="tickets.php" class="btn2">Add More Tickets</a>
+                            <a href="login.php" class="btn">Check Me Out!</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                             <p> - Grants you access to both days of the festival</p>
                             <p class="txt-price">Deposit: $10</p>
                             <p class="txt-price">Full Price: $210</p>
-                            <a href="login.html">
+                            <a href="login.php">
                                 <div class="btn">Add to Cart</div>
                             </a>
                         </div>
@@ -168,10 +168,10 @@
         </section>
     </main>
     <footer class="g-footer">
-        <a href="../index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="footer-nav-special">
             <li>
-                <a href="../volunteer/volunteer-signup.html">
+                <a href="../volunteer/volunteer-signup.php">
                 <div class="btn">Volunteer Portal</div>
                 </a>
             </li>

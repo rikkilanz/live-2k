@@ -12,10 +12,10 @@
 <body>
     <div class="bg"></div>
     <header class="g-header">
-        <a href="index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="nav-bar">
             <li>
-                <a href="..//ticket/tickets.html" title="To tickets page">
+                <a href="..//ticket/tickets.php" title="To tickets page">
                     <p>Tickets</p>
                 </a>
             </li>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="artist-page/artist-page-day1.html" title="To experience page">
+                <a href="artist-page/artist-page-day1.php" title="To experience page">
                     <p>Lineup</p>
                 </a>
             </li>
@@ -40,8 +40,8 @@
                         <p>More</p>
                     </a>
                     <div class="dropdown-content">
-                        <a href="../ethos.html">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.html">Volunteer</a>
+                        <a href="../ethos.php">Ethos</a>
+                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
                     </div>
                 </div>
             </li>
@@ -64,7 +64,7 @@
                         <li class="headliner">
                             <ul>
                                 <li>
-                                    <a href="fates-parents.html">
+                                    <a href="fates-parents.php">
                                         <div class="artist-container">
                                             <div class="artist-image-1"><img src="../images/artist-photos/fates-parents.png" alt=""></div>
                                             <h3 class="txt-black">Fates Parent</h3>
@@ -72,7 +72,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="dark-spot-legumes.html">
+                                    <a href="dark-spot-legumes.php">
                                         <div class="artist-container">
                                             <div class="artist-image-1"><img src="../images/artist-photos/dark-spot-legumes.png" alt=""></div>
                                             <h3 class="txt-black">Dark Spot Legumes</h3>
@@ -84,7 +84,7 @@
                         <li class="sub-headliner">
                             <ul>
                                 <li>
-                                    <a href="the-puppydog-action-figures.html">
+                                    <a href="the-puppydog-action-figures.php">
                                         <div class="artist-container">
                                             <div class="artist-image-2"><img src="../images/artist-photos/the-puppydog-action-figures.jpg" alt=""></div>
                                             <h3 class="txt-black">The Puppydog Action Figures</h3>
@@ -265,7 +265,7 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="artist-page-day2.html" class="next-day">
+                    <a href="artist-page-day2.php" class="next-day">
                         <h4>CHECK OUT DAY 2 HERE</h4>
                     </a>
                 </div>
@@ -274,13 +274,13 @@
     </main>
     <footer class="g-footer">
         <div class="nav-logo">
-            <a href="index.html">
+            <a href="index.php">
             <img src="../images/live2k_Logo_final.png" alt="live 2k logo" width="250" height="auto">
             </a>
         </div>
         <ul class="footer-nav-special">
             <li>
-                <a href="../volunteer/volunteer-signup.html">
+                <a href="../volunteer/volunteer-signup.php">
                 <div class="btn">Volunteer Portal</div>
                 </a>
             </li>

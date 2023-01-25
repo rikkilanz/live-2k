@@ -12,10 +12,10 @@
 <body>
     <div class="bg"></div>
     <header class="g-header">
-        <a href="../index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="nav-bar">
             <li>
-                <a href="tickets.html" title="To tickets page">
+                <a href="tickets.php" title="To tickets page">
                     <p>Tickets</p>
                 </a>
             </li>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="../artist-page/artist-page-day1.html" title="To experience page">
+                <a href="../artist-page/artist-page-day1.php" title="To experience page">
                     <p>Lineup</p>
                 </a>
             </li>
@@ -40,60 +40,45 @@
                         <p>More</p>
                     </a>
                     <div class="dropdown-content">
-                        <a href="../ethos.html">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.html">Volunteer</a>
+                        <a href="../ethos.php">Ethos</a>
+                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
                     </div>
                 </div>
             </li>
         </ul>
     </header>
-   <main>
-    <section id="volunteer" class="volunteer vol-confirm">
-        <div class="window">
-            <div class="window-header">
-                <div class="window-title">Signup Confirmed</div>
+    <main>
+        <section class="login-portal">
+            <div class="window">
+                <div class="window-header">
+                    <h3 class="window-title is-small">Log-In</h3>
                     <div class="window-icons">
-                        <div class="img"></div>
                         <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
                         <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
                         <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
-                    <div class="confirm-banner">
-                        <img src="../images/volunteer-confirm-banner.jpg">
-                        <h4>Volunteer Signup Confirmed</h4>
+                    <h3 class="txt-black">Login</h3>
+                    <div class="cta-input">
+                        <input type="text" name="" placeholder="Email Address">
+                        <input type="text" name="" placeholder="Password">
                     </div>
-                    <div class="vol-confirm-copy">
-                        <p>Thank you so much for signing up to volunteer with LIVE2K!</p>
-                        <p>We have recieved your information. Please check your email for instructions and next steps.</p>
-                        <p>If you have any questions, please email us at: <a href="#">contact@live2k.show</a></p>
-                        <div class="vol-buttons">
-                            <div>
-                                <a href="../index.html">
-                                <div class="submit-btn">Back to Home</div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="../artist-page/artist-page-day1.html">
-                                <div class="submit-btn">Lineups</div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    <a href="ticket-checkout.php">
+                        <div class="btn scale-4">Login</div>
+                    </a>
+                    <a href="ticket-checkout.php">
+                        <div class="btn2">Sign Up</div>
+                    </a>
+                    <a class="guest-checkout" href="ticket-checkout.php">Checkout as Guest</a>
                 </div>
-            </div>
-        </div>
+        </section>
     </main>
     <footer class="g-footer">
-        <div class="nav-logo">
-            <a href="index.html">
-            <img src="../images/live2k_Logo_final.png" alt="live 2k logo" width="250" height="auto">
-            </a>
-        </div>
+        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="footer-nav-special">
             <li>
-                <a href="volunteer-signup.html">
+                <a href="../volunteer/volunteer-signup.php">
                 <div class="btn">Volunteer Portal</div>
                 </a>
             </li>

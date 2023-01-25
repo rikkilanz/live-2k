@@ -12,10 +12,10 @@
 <body>
     <div class="bg"></div>
     <header class="g-header">
-        <a href="../index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="nav-bar">
             <li>
-                <a href="tickets.html" title="To tickets page">
+                <a href="tickets.php" title="To tickets page">
                     <p>Tickets</p>
                 </a>
             </li>
@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li>
-                <a href="../artist-page/artist-page-day1.html" title="To experience page">
+                <a href="../artist-page/artist-page-day1.php" title="To experience page">
                     <p>Lineup</p>
                 </a>
             </li>
@@ -40,8 +40,8 @@
                         <p>More</p>
                     </a>
                     <div class="dropdown-content">
-                        <a href="../ethos.html">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.html">Volunteer</a>
+                        <a href="../ethos.php">Ethos</a>
+                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
                     </div>
                 </div>
             </li>
@@ -144,8 +144,8 @@
                                     </div>
                                 </div>
                                 <div class="checkout-buttons">
-                                    <a class="continue-shopping" href="tickets.html">Continue Shopping</a>
-                                    <a href="ticket-success.html" class="btn">CHECKOUT</a>
+                                    <a class="continue-shopping" href="tickets.php">Continue Shopping</a>
+                                    <a href="ticket-success.php" class="btn">CHECKOUT</a>
                                 </div>
                             </div>
                         </div>
@@ -153,10 +153,10 @@
         </section>
     </main>
     <footer class="g-footer">
-        <a href="../index.html"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
+        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
         <ul class="footer-nav-special">
             <li>
-                <a href="../volunteer/volunteer-signup.html">
+                <a href="../volunteer/volunteer-signup.php">
                 <div class="btn">Volunteer Portal</div>
                 </a>
             </li>
