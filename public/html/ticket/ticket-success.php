@@ -1,52 +1,12 @@
+<?php
+require('../../../app/init.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE 2K | Thank You!</title>
-    <link rel="stylesheet" href="https://use.typekit.net/qln2qjg.css">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
+<?php include('../../partials/head.php'); ?>
 <body>
     <div class="bg"></div>
-    <header class="g-header">
-        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
-        <ul class="nav-bar">
-            <li>
-                <a href="tickets.php" title="To tickets page">
-                    <p>Tickets</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To experience page">
-                    <p>Experience</p>
-                </a>
-            </li>
-            <li>
-                <a href="../artist-page/artist-page-day1.php" title="To experience page">
-                    <p>Lineup</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To forum page">
-                    <p>The 411</p>
-                </a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <a class="dropbtn" href="#">
-                        <p>More</p>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="../ethos.php">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </header>
+    <?php include('../../partials/header.php'); ?>
     <main>
         <section class="success-section">
             <div class="window">
@@ -66,30 +26,11 @@
                     <h3 class="txt-black">See you at the fest!</h3>
                     <a>Order No: #1234567890</a>
                     <p>Thank you for purchasing tickets from us! A receipt for your purchase as well as your digital tickets will be emailed to you shortly.</p>
-                    <div class="button-section"><a class="btn" href="../index.php">Return Home</a></div>
+                    <div class="button-section"><a class="btn" href="<?php echo get_public_url('index.php')?>">Return Home</a></div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="g-footer">
-        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
-        <ul class="footer-nav-special">
-            <li>
-                <a href="../volunteer/volunteer-signup.php">
-                <div class="btn">Volunteer Portal</div>
-                </a>
-            </li>
-        </ul>
-        <ul class="footer-nav">
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Newsletter</a></li>
-            <li><a href="">Press Media</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Web Accessiblity</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Covid-19</a></li>
-        </ul>
-       </footer>
+    <?php include('../../partials/footer.php'); ?>
 </body>
 </html>

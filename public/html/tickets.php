@@ -1,52 +1,12 @@
+<?php
+require('../../app/init.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE 2K | Tickets</title>
-    <link rel="stylesheet" href="https://use.typekit.net/qln2qjg.css">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
+<?php include('../partials/head.php'); ?>
 <body>
     <div class="bg"></div>
-    <header class="g-header">
-        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
-        <ul class="nav-bar">
-            <li>
-                <a href="tickets.php" title="To tickets page">
-                    <p>Tickets</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To experience page">
-                    <p>Experience</p>
-                </a>
-            </li>
-            <li>
-                <a href="../artist-page/artist-page-day1.php" title="To experience page">
-                    <p>Lineup</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To forum page">
-                    <p>The 411</p>
-                </a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <a class="dropbtn" href="#">
-                        <p>More</p>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="../ethos.php">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </header>
+    <?php include('../partials/header.php'); ?>
     <main>
         <section class="ticket-section">
             <h2>Tickets</h2>
@@ -56,9 +16,9 @@
                         <div class="window-header">
                             <h3 class="window-title is-small">ONE DAY PASS</h3>
                             <div class="window-icons">
-                                <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                                <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                                <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                             </div>
                         </div>
                         <div class="window-content">
@@ -68,7 +28,7 @@
                             <p> - Grants you access to (1) day of the festival, date must be selected at point of check out</p>
                             <p class="txt-price">Deposit: $10</p>
                             <p class="txt-price">Full Price: $110</p>
-                            <a href="tickets-click.php" class="btn2">Add to Cart</a>
+                            <a href="<?php echo get_public_url('/html/ticket/tickets-click.php')?>" class="btn2">Add to Cart</a>
                         </div>
                     </div>
                 </li>
@@ -77,9 +37,9 @@
                         <div class="window-header">
                             <h3 class="window-title is-small">TWO DAY PASS</h3>
                             <div class="window-icons">
-                                <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                                <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                                <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                             </div>
                         </div>
                         <div class="window-content">
@@ -90,7 +50,7 @@
                             <p class="txt-price">Deposit: $10</p>
                             <p class="txt-price">Full Price: $210</p>
                             <a href="login.php">
-                                <a href="tickets-click.php" class="btn">Add to Cart</a>
+                                <a href="<?php echo get_public_url('/html/ticket/tickets-click.php')?>" class="btn">Add to Cart</a>
                             </a>
                         </div>
                     </div>
@@ -100,9 +60,9 @@
                         <div class="window-header">
                             <h3 class="window-title is-small">VIP ONE DAY PASS</h3>
                             <div class="window-icons">
-                                <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                                <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                                <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                             </div>
                         </div>
                         <div class="window-content">
@@ -115,7 +75,7 @@
                             <p> - Swag bag</p>
                             <p class="txt-price">Deposit: $50</p>
                             <p class="txt-price">Full Price: $225</p>
-                            <a href="tickets-click.php" class="btn2">Add to Cart</a>
+                            <a href="<?php echo get_public_url('/html/ticket/tickets-click.php')?>" class="btn2">Add to Cart</a>
                         </div>
                     </div>
                 </li>
@@ -124,9 +84,9 @@
                         <div class="window-header">
                             <h3 class="window-title is-small">VIP TWO DAY PASS</h3>
                             <div class="window-icons">
-                                <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                                <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                                <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                             </div>
                         </div>
                         <div class="window-content">
@@ -139,32 +99,13 @@
                             <p> - Deluxe swag bag</p>
                             <p class="txt-price">Deposit: $10</p>
                             <p class="txt-price">Full Price: $110</p>
-                            <a href="tickets-click.php" class="btn2">Add to Cart</a>
+                            <a href="<?php echo get_public_url('/html/ticket/tickets-click.php')?>" class="btn2">Add to Cart</a>
                         </div>
                     </div>
                 </li>
             </ul>
         </section>
     </main>
-    <footer class="g-footer">
-        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
-        <ul class="footer-nav-special">
-            <li>
-                <a href="../volunteer/volunteer-signup.php">
-                <div class="btn">Volunteer Portal</div>
-                </a>
-            </li>
-        </ul>
-        <ul class="footer-nav">
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Newsletter</a></li>
-            <li><a href="">Press Media</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Web Accessiblity</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Covid-19</a></li>
-        </ul>
-       </footer>
+    <?php include('../partials/footer.php'); ?>
 </body>
 </html>

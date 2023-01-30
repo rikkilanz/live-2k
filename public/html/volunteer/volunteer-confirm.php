@@ -1,67 +1,27 @@
+<?php
+require('../../../app/init.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE 2K | Login</title>
-    <link rel="stylesheet" href="https://use.typekit.net/qln2qjg.css">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
+<?php include('../../partials/head.php'); ?>
 <body>
     <div class="bg"></div>
-    <header class="g-header">
-        <a href="../index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
-        <ul class="nav-bar">
-            <li>
-                <a href="tickets.php" title="To tickets page">
-                    <p>Tickets</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To experience page">
-                    <p>Experience</p>
-                </a>
-            </li>
-            <li>
-                <a href="../artist-page/artist-page-day1.php" title="To experience page">
-                    <p>Lineup</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To forum page">
-                    <p>The 411</p>
-                </a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <a class="dropbtn" href="#">
-                        <p>More</p>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="../ethos.php">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </header>
-   <main>
+    <?php include('../../partials/header.php'); ?>
+    <main>
     <section id="volunteer" class="volunteer vol-confirm">
         <div class="window">
             <div class="window-header">
                 <div class="window-title">Signup Confirmed</div>
                     <div class="window-icons">
                         <div class="img"></div>
-                        <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
                     <div class="confirm-banner">
-                        <img src="../images/volunteer-confirm-banner.jpg">
+                        <img src="<?php echo get_public_url('')?>images/volunteer-confirm-banner.jpg">
                         <h4>Volunteer Signup Confirmed</h4>
                     </div>
                     <div class="vol-confirm-copy">
@@ -70,12 +30,12 @@
                         <p>If you have any questions, please email us at: <a href="#">contact@live2k.show</a></p>
                         <div class="vol-buttons">
                             <div>
-                                <a href="../index.php">
+                                <a href="<?php echo get_public_url('index.php')?>">
                                 <div class="submit-btn">Back to Home</div>
                                 </a>
                             </div>
                             <div>
-                                <a href="../artist-page/artist-page-day1.php">
+                                <a href="<?php echo get_public_url('/html/artist-page/artist-page-day1.php')?>">
                                 <div class="submit-btn">Lineups</div>
                                 </a>
                             </div>
@@ -85,29 +45,6 @@
             </div>
         </div>
     </main>
-    <footer class="g-footer">
-        <div class="nav-logo">
-            <a href="index.php">
-            <img src="../images/live2k_Logo_final.png" alt="live 2k logo" width="250" height="auto">
-            </a>
-        </div>
-        <ul class="footer-nav-special">
-            <li>
-                <a href="volunteer-signup.php">
-                <div class="btn">Volunteer Portal</div>
-                </a>
-            </li>
-        </ul>
-        <ul class="footer-nav">
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Newsletter</a></li>
-            <li><a href="">Press Media</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Web Accessiblity</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Covid-19</a></li>
-        </ul>
-       </footer>
+    <?php include('../../partials/footer.php'); ?>
 </body>
 </html>

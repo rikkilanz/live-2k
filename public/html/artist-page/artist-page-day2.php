@@ -1,61 +1,20 @@
-<a href="">!<!DOCTYPE html></a>
+<?php 
+require('../../../app/init.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LIVE 2K | Day 2 Lineup</title>
-    <link rel="stylesheet" href="https://use.typekit.net/qln2qjg.css">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
+<?php include('../../partials/head.php'); ?>
 <body>
     <div class="bg"></div>
-    <header class="g-header">
-        <a href="index.php"><img src="../images/live2k_Logo_final.png" alt="live 2k logo" class="nav-logo"></a>
-        <ul class="nav-bar">
-            <li>
-                <a href="..//ticket/tickets.php" title="To tickets page">
-                    <p>Tickets</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To experience page">
-                    <p>Experience</p>
-                </a>
-            </li>
-            <li>
-                <a href="artist-page/artist-page-day1.php" title="To experience page">
-                    <p>Lineup</p>
-                </a>
-            </li>
-            <li>
-                <a href="#" title="To forum page">
-                    <p>The 411</p>
-                </a>
-            </li>
-            <li>
-                <div class="dropdown">
-                    <a class="dropbtn" href="#">
-                        <p>More</p>
-                    </a>
-                    <div class="dropdown-content">
-                        <a href="../ethos.php">Ethos</a>
-                        <a href="../volunteer/volunteer-signup.php">Volunteer</a>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </header>
-    <main>
+    <?php include('../../partials/header.php'); ?>
         <section class="artist-list">
             <div class="window">
                 <div class="window-header">
                     <h3 class="window-title is-small">DAY 2</h3>
                     <div class="window-icons">
-                        <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
@@ -66,7 +25,7 @@
                                 <li>
                                     <a href="kanye-east.php">
                                         <div class="artist-container">
-                                            <div class="artist-image-1"><img src="../images/artist-photos/kanye-east.png" alt=""></div>
+                                            <div class="artist-image-1"><img src="<?php echo get_public_url('')?>images/artist-photos/kanye-east.png" alt=""></div>
                                             <h3 class="txt-black">Kanye East</h3>
                                         </div>
                                     </a>
@@ -74,7 +33,7 @@
                                 <li>
                                     <a href="britney-s-pearce.php">
                                         <div class="artist-container">
-                                            <div class="artist-image-1"><img src="../images/artist-photos/britney-s-pearce.png" alt=""></div>
+                                            <div class="artist-image-1"><img src="<?php echo get_public_url('')?>images/artist-photos/britney-s-pearce.png" alt=""></div>
                                             <h3 class="txt-black">Britney S. Pearce</h3>
                                         </div>
                                     </a>
@@ -86,7 +45,7 @@
                                 <li>
                                     <a href="paft-dunk.php">
                                         <div class="artist-container">
-                                            <div class="artist-image-2"><img src="../images/artist-photos/paft-dunk.png" alt=""></div>
+                                            <div class="artist-image-2"><img src="<?php echo get_public_url('')?>images/artist-photos/paft-dunk.png" alt=""></div>
                                             <h3 class="txt-black">Paft Dunk</h3>
                                         </div>
                                     </a>
@@ -94,7 +53,7 @@
                                 <li>
                                     <a href="the-alleyway-guys.php">
                                         <div class="artist-container">
-                                            <div class="artist-image-2"><img src="../images/artist-photos/the-alleyway-guys.png" alt=""></div>
+                                            <div class="artist-image-2"><img src="<?php echo get_public_url('')?>images/artist-photos/the-alleyway-guys.png" alt=""></div>
                                             <h3 class="txt-black">The Alley Guys</h3>
                                         </div>
                                     </a>
@@ -102,7 +61,7 @@
                                 <li>
                                     <a href="the-mice-girls.php">
                                         <div class="artist-container">
-                                            <div class="artist-image-2"><img src="../images/artist-photos/the-mice-girls.jpg" alt=""></div>
+                                            <div class="artist-image-2"><img src="<?php echo get_public_url('')?>images/artist-photos/the-mice-girls.jpg" alt=""></div>
                                             <h3 class="txt-black">The Mice Girls</h3>
                                         </div>
                                     </a>
@@ -110,7 +69,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-2"><img src="../images/artist-photos/alicia-locks.png" alt=""></div>
+                                            <div class="artist-image-2"><img src="<?php echo get_public_url('')?>images/artist-photos/alicia-locks.png" alt=""></div>
                                             <h3 class="txt-black">Alicia Locks</h3>
                                         </div>
                                     </a>
@@ -118,7 +77,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-2"><img src="../images/artist-photos/cream-day.png" alt=""></div>
+                                            <div class="artist-image-2"><img src="<?php echo get_public_url('')?>images/artist-photos/cream-day.png" alt=""></div>
                                             <h3 class="txt-black">Cream Day</h3>
                                         </div>
                                     </a>
@@ -126,7 +85,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-2"><img src="../images/artist-photos/evan-essence.png" alt=""></div>
+                                            <div class="artist-image-2"><img src="<?php echo get_public_url('')?>images/artist-photos/evan-essence.png" alt=""></div>
                                             <h3 class="txt-black">Evan Essence</h3>
                                         </div>
                                     </a>
@@ -137,7 +96,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/crimson-5.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/crimson-5.png" alt=""></div>
                                             <p class="txt-black">Crimson 5</p>
                                         </div>
                                     </a>
@@ -145,7 +104,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/will-u-are.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/will-u-are.png" alt=""></div>
                                             <p class="txt-black">will.u.are.</p>
                                         </div>
                                     </a>
@@ -153,7 +112,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/husher.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/husher.png" alt=""></div>
                                             <p class="txt-black">Husher</p>
                                         </div>
                                     </a>
@@ -161,7 +120,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/relax-in-the-bath.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/relax-in-the-bath.png" alt=""></div>
                                             <p class="txt-black">Relax! In The Bath</p>
                                         </div>
                                     </a>
@@ -169,7 +128,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/gwynnes-tafani.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/gwynnes-tafani.png" alt=""></div>
                                             <p class="txt-black">Gwynne's Tafani</p>
                                         </div>
                                     </a>
@@ -177,7 +136,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/geezer.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/geezer.png" alt=""></div>
                                             <p class="txt-black">Geezer</p>
                                         </div>
                                     </a>
@@ -185,7 +144,7 @@
                                 <li>
                                     <a href="">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/water.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/water.png" alt=""></div>
                                             <p class="txt-black">Water</p>
                                         </div>
                                     </a>
@@ -193,7 +152,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/keyha.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/keyha.png" alt=""></div>
                                             <p class="txt-black">Ke&yen;ha</p>
                                         </div>
                                     </a>
@@ -201,7 +160,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/one-dominion.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/one-dominion.png" alt=""></div>
                                             <p class="txt-black">OneDominion</p>
                                         </div>
                                     </a>
@@ -209,7 +168,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/luigi.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/luigi.png" alt=""></div>
                                             <p class="txt-black">Luigi</p>
                                         </div>
                                     </a>
@@ -217,7 +176,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/the-all-canadian-acceptance.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/the-all-canadian-acceptance.png" alt=""></div>
                                             <p class="txt-black">The All-Canadian Acceptance</p>
                                         </div>
                                     </a>
@@ -225,7 +184,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/the-flay.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/the-flay.png" alt=""></div>
                                             <p class="txt-black">The Flay</p>
                                         </div>
                                     </a>
@@ -233,7 +192,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/b-tweens.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/b-tweens.png" alt=""></div>
                                             <p class="txt-black">B&ast;Tweens</p>
                                         </div>
                                     </a>
@@ -241,7 +200,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/willa-chevy.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/willa-chevy.png" alt=""></div>
                                             <p class="txt-black">Willa Chevy</p>
                                         </div>
                                     </a>
@@ -249,7 +208,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><img src="../images/artist-photos/lillary-buff.png" alt=""></div>
+                                            <div class="artist-image-3"><img src="<?php echo get_public_url('')?>images/artist-photos/lillary-buff.png" alt=""></div>
                                             <p class="txt-black">Lillary Buff</p>
                                         </div>
                                     </a>
@@ -257,7 +216,7 @@
                                 <li>
                                     <a href="#">
                                         <div class="artist-container">
-                                            <div class="artist-image-3"><a href=""><img src="../images/artist-photos/prosaic.png" alt=""></a></div>
+                                            <div class="artist-image-3"><a href=""><img src="<?php echo get_public_url('')?>images/artist-photos/prosaic.png" alt=""></a></div>
                                             <p class="txt-black">Prosaic</p>
                                         </div>
                                     </a>
@@ -265,36 +224,13 @@
                             </ul>
                         </li>
                     </ul>
-                    <a href="artist-page-day1.php" class="next-day">
-                        <h4>CHECK OUT DAY 2 HERE</h4>
+                    <a href="<?php echo get_public_url('/html/artist-page/artist-page-day1.php')?>" class="next-day">
+                        <h4>CHECK OUT DAY 1 HERE</h4>
                     </a>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="g-footer">
-        <div class="nav-logo">
-            <a href="index.php">
-            <img src="../images/live2k_Logo_final.png" alt="live 2k logo" width="250" height="auto">
-            </a>
-        </div>
-        <ul class="footer-nav-special">
-            <li>
-                <a href="../volunteer/volunteer-signup.php">
-                <div class="btn">Volunteer Portal</div>
-                </a>
-            </li>
-        </ul>
-        <ul class="footer-nav">
-            <li><a href="">FAQ</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Newsletter</a></li>
-            <li><a href="">Press Media</a></li>
-            <li><a href="">Contact Us</a></li>
-            <li><a href="">Web Accessiblity</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Covid-19</a></li>
-        </ul>
-       </footer>
+    <?php include('../../partials/footer.php'); ?>
 </body>
 </html>

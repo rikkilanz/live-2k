@@ -1,18 +1,22 @@
+<?php
+require('../app/init.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en-CA">
-<?php include('public\partials\head.php'); ?>
+<?php include('./partials/head.php'); ?>
 <body>
     <div class="bg"></div>
-    <?php include('../../partials/header.php'); ?>
+    <?php include('./partials/header.php'); ?>
    <main>
     <section class="hero-navigation">
         <div class="hero-nav-list">
-            <img src="images/live2k_Logo_final.png" alt="live 2k logo" class="hero-logo">
+            <img src="<?php echo get_public_url('')?>images/live2k_Logo_final.png" alt="live 2k logo" class="hero-logo">
             <ul class="hero-nav">
                 <li>
-                    <a href="tickets.php" title="To tickets page">
+                    <a href="<?php echo get_public_url('/html/tickets.php')?>" title="To tickets page">
                         <div class="nav-link">
-                            <img src="images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
+                            <img src="<?php echo get_public_url('')?>images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
                             <p>Tickets</p>
                         </div>
                     </a>
@@ -20,15 +24,15 @@
                 <li>
                     <a href="#">
                         <div class="nav-link" title="To experience page">
-                            <img src="images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
+                            <img src="<?php echo get_public_url('')?>images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
                             <p>Experience</p>
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="artist-page/artist-page-day1.php" title="To lineup page">
+                    <a href="<?php echo get_public_url('/html/artist-page/artist-page-day1.php')?>" title="To lineup page">
                         <div class="nav-link">
-                            <img src="images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
+                            <img src="<?php echo get_public_url('')?>images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
                             <p>Lineup</p>
                         </div>
                     </a>
@@ -36,7 +40,7 @@
                 <li>
                     <a href="#" title="To forum page">
                         <div class="nav-link">
-                            <img src="images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
+                            <img src="<?php echo get_public_url('')?>images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
                             <p>The 411</p>
                         </div>
                     </a>
@@ -44,7 +48,7 @@
                 <li>
                     <a href="#" title="Browse for more sections">
                         <div class="nav-link">
-                            <img src="images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
+                            <img src="<?php echo get_public_url('')?>images/website-assets/folder-icon.png" alt="an logo image of a retro yellow folder" class="nav-folder">
                             <p>More</p>
                         </div>
                     </a>
@@ -58,8 +62,8 @@
             </a>
         </div>
         <video autoplay muted loop class="bgVideo">
-            <source src="images/live2k-bg-video.mp4" type="video/mp4">
-          </video>
+            <source src="<?php echo get_public_url('')?>images/live2k-bg-video.mp4" type="video/mp4">
+        </video>
     </section>
     <section id="hero-lineup" class="hero-lineup">
         <h2>The Lineup</h2>
@@ -68,26 +72,26 @@
                 <div class="window-title"></div>
                 <div class="window-icons">
                     <div class="img"></div>
-                    <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                    <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                    <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                    <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                    <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                    <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                 </div>
             </div>
             <!-- <div class="lineup-content">
                 <p>Welcome to LIVE 2K, the celebration of the 2000’s aesthetic, fashion, design, and music. From August 20th-21st, prepare to enjoy a weekend-long music festival of your favourite Y2K hits sung by your favourite cover artists. LIVE 2K celebrates the 2000’s with style: aesthetic, fashion, design, and music.</p>
             </div> -->
-            <img src="/images/poster-final.png" alt="">
+            <img src="<?php echo get_public_url('/images/poster-final.png')?>" alt="">
         </div>
         <a class="btn scale-4" href="ticket/tickets.php">Get Tickets</a>
     </section>
     <section class="hero-sponsors">
         <h2>Our Sponsors</h2>
         <ul class="sponsor-logos">
-            <li><img src="images/sponsor-logos/Coca-Cola-Logo.png" alt=""></li>
-            <li><img src="images/sponsor-logos/Heineken-Logo.png" alt=""></li>
-            <li><img src="images/sponsor-logos/Red-Bull-Logo.png" alt=""></li>
-            <li><img src="images/sponsor-logos/Samsung-Logo.png" alt=""></li>
-            <li><img src="images/sponsor-logos/Visa_Inc_logo.png" alt=""></li>
+            <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Coca-Cola-Logo.png" alt=""></li>
+            <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Heineken-Logo.png" alt=""></li>
+            <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Red-Bull-Logo.png" alt=""></li>
+            <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Samsung-Logo.png" alt=""></li>
+            <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Visa_Inc_logo.png" alt=""></li>
         </ul>
     </section>
     <section class="hero-playlists">
@@ -97,13 +101,13 @@
                 <div class="window-header">
                     <h3 class="window-title">Playlist #1</h3>
                     <div class="window-icons">
-                        <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
-                    <img src="images/live2k_Logo_final.png" alt="live 2k logo" class="playlist-logo">
+                    <img src="<?php echo get_public_url('')?>images/live2k_Logo_final.png" alt="live 2k logo" class="playlist-logo">
                     <iframe style="border-radius:0px" src="https://open.spotify.com/embed/playlist/4Kv5E8EVEmZB2vs83uLfeR?utm_source=generator&theme=0" width="70%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
             </div>
@@ -115,13 +119,13 @@
                 <div class="window-header">
                     <h3 class="window-title">Playlist #2</h3>
                     <div class="window-icons">
-                        <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                        <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
-                    <img src="images/live2k_Logo_final.png" alt="live 2k logo" class="playlist-logo">
+                    <img src="<?php echo get_public_url('')?>images/live2k_Logo_final.png" alt="live 2k logo" class="playlist-logo">
                     <iframe style="border-radius:0px" src="https://open.spotify.com/embed/playlist/6wxEYwkhdRUKeyXrjVV5x6?utm_source=generator" width="70%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
             </div>
@@ -133,9 +137,9 @@
                 <h3 class="window-title">Newsletter</h3>
                 <div class="window-icons">
                     <div class="img"></div>
-                    <img src="../images/website-assets/win-icon1.png" alt="" class="win-icon">
-                    <img src="../images/website-assets/win-icon2.png" alt="" class="win-icon">
-                    <img src="../images/website-assets/win-icon3.png" alt="" class="win-icon">
+                    <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
+                    <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
+                    <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
                 </div>
             </div>
             <div class="window-content">
@@ -151,29 +155,6 @@
         </div>
     </section>
    </main>
-   <footer class="g-footer">
-    <div class="nav-logo">
-        <a href="index.php">
-        <img src="images/live2k_Logo_final.png" alt="live 2k logo" width="250" height="auto">
-        </a>
-    </div>
-    <ul class="footer-nav-special">
-        <li>
-            <a href="/volunteer/volunteer-signup.php">
-            <div class="btn">Volunteer Portal</div>
-            </a>
-        </li>
-    </ul>
-    <ul class="footer-nav">
-        <li><a href="">FAQ</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Newsletter</a></li>
-        <li><a href="">Press Media</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Web Accessiblity</a></li>
-        <li><a href="">Privacy Policy</a></li>
-        <li><a href="">Covid-19</a></li>
-    </ul>
-   </footer>
+   <?php include('./partials/footer.php'); ?>
 </body>
 </html>
