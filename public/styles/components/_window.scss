@@ -1,0 +1,49 @@
+/* global style for the browser windows */
+/* not sure if this makes it too tedious to put together? */
+.window {
+    /* set the window size as needed in its section
+    width: 800px;
+    height: auto; */
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 100px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    box-shadow: 15px 15px rgb(37, 37, 37);
+}
+/* window title bar */
+.window-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background-image: linear-gradient(to right, #D4D871, #6B72A6) ;
+    align-items: center;
+    justify-content: space-between;  
+    border-bottom: 5px solid black;
+}
+
+.window-title {   
+    margin-left: 25px;
+}
+
+.window-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    flex-basis: 20%;
+}
+
+.window-icons img {
+    width: 25px;
+    height: auto;
+}
+
+/* window browser content */
+.window-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

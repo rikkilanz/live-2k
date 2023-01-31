@@ -1,0 +1,67 @@
+/*
+    Navigation Bar
+*/
+
+.g-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#D4D871, #6B72A6);
+    padding: 10px 0px;
+    position: fixed;
+    box-shadow: 0px 10px 10px rgb(0 0 0 / 0.2);
+    z-index: 1;
+    top: 0;
+}
+
+.g-header .nav-logo {
+    width: 100px;
+    flex-basis: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar li{
+    padding: 10px;
+}
+
+/* Drop down menu for navigation bar */
+.nav-bar .dropdown {
+    position: relative;
+}
+
+.nav-bar .dropbtn {
+    border: none;
+    padding: 10;
+}
+
+.nav-bar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-bar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    margin: 5px 0;
+    align-items: flex-start;
+}
+
+.nav-bar .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.nav-bar .dropdown:hover .dropdown-content {
+    display: block;
+}

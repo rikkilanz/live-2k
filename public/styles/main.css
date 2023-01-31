@@ -56,6 +56,38 @@ table {
   border-spacing: 0;
 }
 
+.is-small {
+  font-size: 10px;
+}
+
+.txt-black {
+  color: black;
+}
+
+.txt-white {
+  color: #FFFFFF;
+}
+
+.scale-1 {
+  transform: scale(0.25);
+}
+
+.scale-2 {
+  transform: scale(0.5);
+}
+
+.scale-3 {
+  transform: scale(0.75);
+}
+
+.scale-4 {
+  transform: scale(1.5);
+}
+
+.opacity {
+  opacity: 0.1;
+}
+
 /*
     GLOBAL STYLES
 */
@@ -82,124 +114,6 @@ a:hover {
   position: fixed;
   background-image: radial-gradient(#FFFFFF, #8685A7);
   z-index: -1;
-}
-
-/* global style for the browser windows */
-/* not sure if this makes it too tedious to put together? */
-.window {
-  /* set the window size as needed in its section
-  width: 800px;
-  height: auto; */
-  border: 5px solid black;
-  display: flex;
-  flex-direction: column;
-  margin: 25px 100px;
-  background-color: rgb(255, 255, 255);
-  position: relative;
-  box-shadow: 15px 15px rgb(37, 37, 37);
-}
-
-/* window title bar */
-.window-header {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  background-image: linear-gradient(to right, #D4D871, #6B72A6);
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 5px solid black;
-}
-
-.window-title {
-  margin-left: 25px;
-}
-
-.window-icons {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  position: relative;
-  align-items: center;
-  flex-basis: 20%;
-}
-
-.window-icons img {
-  width: 25px;
-  height: auto;
-}
-
-/* window browser content */
-.window-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/*
-    Navigation Bar
-*/
-.g-header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(#D4D871, #6B72A6);
-  padding: 10px 0px;
-  position: fixed;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  top: 0;
-}
-
-.g-header .nav-logo {
-  width: 100px;
-  flex-basis: 100%;
-}
-
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-bar li {
-  padding: 10px;
-}
-
-/* Drop down menu for navigation bar */
-.nav-bar .dropdown {
-  position: relative;
-}
-
-.nav-bar .dropbtn {
-  border: none;
-  padding: 10;
-}
-
-.nav-bar .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.nav-bar .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: flex;
-  margin: 5px 0;
-  align-items: flex-start;
-}
-
-.nav-bar .dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.nav-bar .dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /*
@@ -1214,117 +1128,6 @@ a:hover {
 }
 
 /*
-    Footer Section
-*/
-.g-footer {
-  width: 100%;
-  min-height: 20%;
-  background-color: #6B72A6;
-  display: flex;
-}
-
-.g-footer .nav-logo {
-  max-width: 30%;
-  flex-basis: 30%;
-  transform: scale(0.3);
-}
-
-.footer-nav {
-  padding-right: 150px;
-  max-width: 35%;
-  flex-basis: 35%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-height: 10%;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.footer-nav-special {
-  max-width: 45%;
-  flex-basis: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-height: 10%;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.g-footer a {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 12px;
-  color: white;
-}
-
-/*
-    Styles
-*/
-.btn {
-  background-color: #ED217C;
-  border-radius: 25px;
-  width: 90%;
-  height: 100%;
-  padding: 10px;
-  text-align: center;
-  font-family: transducer-extended, sans-serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 12px;
-  color: white;
-}
-
-.btn2 {
-  background-color: white;
-  border-radius: 25px;
-  border: #ED217C solid 5px;
-  width: 90%;
-  height: 100%;
-  padding: 10px;
-  text-align: center;
-  font-family: transducer-extended, sans-serif;
-  font-weight: 600;
-  font-style: italic;
-  font-size: 12px;
-  color: black;
-}
-
-.is-small {
-  font-size: 10px;
-}
-
-.txt-black {
-  color: black;
-}
-
-.txt-white {
-  color: #FFFFFF;
-}
-
-.scale-1 {
-  transform: scale(0.25);
-}
-
-.scale-2 {
-  transform: scale(0.5);
-}
-
-.scale-3 {
-  transform: scale(0.75);
-}
-
-.scale-4 {
-  transform: scale(1.5);
-}
-
-.opacity {
-  opacity: 0.1;
-}
-
-/*
     Typography
 */
 .nav-bar a {
@@ -1381,4 +1184,201 @@ h4 {
   font-style: italic;
   font-size: 30px;
   color: rgb(0, 0, 0);
+}
+
+/*
+    Styles
+*/
+.btn {
+  background-color: #ED217C;
+  border-radius: 25px;
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: transducer-extended, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 12px;
+  color: white;
+}
+
+.btn2 {
+  background-color: white;
+  border-radius: 25px;
+  border: #ED217C solid 5px;
+  width: 90%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  font-family: transducer-extended, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 12px;
+  color: black;
+}
+
+/*
+    Navigation Bar
+*/
+.g-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#D4D871, #6B72A6);
+  padding: 10px 0px;
+  position: fixed;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 0;
+}
+
+.g-header .nav-logo {
+  width: 100px;
+  flex-basis: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar li {
+  padding: 10px;
+}
+
+/* Drop down menu for navigation bar */
+.nav-bar .dropdown {
+  position: relative;
+}
+
+.nav-bar .dropbtn {
+  border: none;
+  padding: 10;
+}
+
+.nav-bar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.nav-bar .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  margin: 5px 0;
+  align-items: flex-start;
+}
+
+.nav-bar .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.nav-bar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*
+    Footer Section
+*/
+.g-footer {
+  width: 100%;
+  min-height: 20%;
+  background-color: #6B72A6;
+  display: flex;
+}
+
+.g-footer .nav-logo {
+  max-width: 30%;
+  flex-basis: 30%;
+  transform: scale(0.3);
+}
+
+.footer-nav {
+  padding-right: 150px;
+  max-width: 35%;
+  flex-basis: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 10%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-nav-special {
+  max-width: 45%;
+  flex-basis: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 10%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.g-footer a {
+  font-family: transducer-extended, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 12px;
+  color: white;
+}
+
+/* global style for the browser windows */
+/* not sure if this makes it too tedious to put together? */
+.window {
+  /* set the window size as needed in its section
+  width: 800px;
+  height: auto; */
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 100px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  box-shadow: 15px 15px rgb(37, 37, 37);
+}
+
+/* window title bar */
+.window-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  background-image: linear-gradient(to right, #D4D871, #6B72A6);
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid black;
+}
+
+.window-title {
+  margin-left: 25px;
+}
+
+.window-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  position: relative;
+  align-items: center;
+  flex-basis: 20%;
+}
+
+.window-icons img {
+  width: 25px;
+  height: auto;
+}
+
+/* window browser content */
+.window-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
