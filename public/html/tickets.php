@@ -16,9 +16,9 @@ require('../../app/init.php');
                         <div class="window-header">
                             <h3 class="window-title is-small">ONE DAY PASS</h3>
                             <div class="window-icons">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon1.png')?>" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon2.png')?>" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon3.png')?>" alt="" class="win-icon">
                             </div>
                         </div>
                         <div class="window-content">
@@ -37,9 +37,9 @@ require('../../app/init.php');
                         <div class="window-header">
                             <h3 class="window-title is-small">TWO DAY PASS</h3>
                             <div class="window-icons">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon1.png')?>" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon2.png')?>" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon3.png')?>" alt="" class="win-icon">
                             </div>
                         </div>
                         <div class="window-content">
@@ -60,9 +60,9 @@ require('../../app/init.php');
                         <div class="window-header">
                             <h3 class="window-title is-small">VIP ONE DAY PASS</h3>
                             <div class="window-icons">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon1.png')?>" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon2.png')?>" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon3.png')?>" alt="" class="win-icon">
                             </div>
                         </div>
                         <div class="window-content">
@@ -84,9 +84,9 @@ require('../../app/init.php');
                         <div class="window-header">
                             <h3 class="window-title is-small">VIP TWO DAY PASS</h3>
                             <div class="window-icons">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
-                                <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon1.png')?>" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon2.png')?>" alt="" class="win-icon">
+                                <img src="<?php echo get_public_url('/images/website-assets/win-icon3.png')?>" alt="" class="win-icon">
                             </div>
                         </div>
                         <div class="window-content">

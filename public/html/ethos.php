@@ -15,13 +15,13 @@ require('../../app/init.php');
                 <div class="window-title">Ethos</div>
                     <div class="window-icons">
                         <div class="img"></div>
-                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
-                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
-                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('/images/website-assets/win-icon1.png')?>" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('/images/website-assets/win-icon2.png')?>" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('/images/website-assets/win-icon3.png')?>" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
-                    <div><img class="ethos-banner" src="<?php echo get_public_url('')?>images/ethos-banner.jpg"></div>
+                    <div><img class="ethos-banner" src="<?php echo get_public_url('/images/ethos-banner.jpg')?>"></div>
                     <div class="ethos-copy">
                         <p>Live 2k’s mission is to bring all the best early 2000’s cover bands under one roof for two epic days of the most fetch music that will bring you back to the turn of the millennium.</p>
                         <p>The festival was designed as a celebration of what made the 2000’s so hot, and we have a commitment to bring you the most (almost) authentic acts that dominated the charts of the early 2000’s.</p>
@@ -38,11 +38,11 @@ require('../../app/init.php');
         <section class="hero-sponsors">
             <h2>Our Sponsors</h2>
             <ul class="sponsor-logos">
-                <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Coca-Cola-Logo.png" alt=""></li>
-                <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Heineken-Logo.png" alt=""></li>
-                <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Red-Bull-Logo.png" alt=""></li>
-                <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Samsung-Logo.png" alt=""></li>
-                <li><img src="<?php echo get_public_url('')?>images/sponsor-logos/Visa_Inc_logo.png" alt=""></li>
+                <li><img src="<?php echo get_public_url('images/sponsor-logos/Coca-Cola-Logo.png')?>" alt=""></li>
+                <li><img src="<?php echo get_public_url('images/sponsor-logos/Heineken-Logo.png')?>" alt=""></li>
+                <li><img src="<?php echo get_public_url('images/sponsor-logos/Red-Bull-Logo.png')?>" alt=""></li>
+                <li><img src="<?php echo get_public_url('images/sponsor-logos/Samsung-Logo.png')?>" alt=""></li>
+                <li><img src="<?php echo get_public_url('images/sponsor-logos/Visa_Inc_logo.png')?>" alt=""></li>
             </ul>
         </section>
     </main>

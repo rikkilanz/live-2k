@@ -13,9 +13,9 @@ require('../../../app/init.php');
                 <div class="window-header">
                     <h3 class="window-title is-small">CART</h3>
                     <div class="window-icons">
-                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon1.png" alt="" class="win-icon">
-                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon2.png" alt="" class="win-icon">
-                        <img src="<?php echo get_public_url('')?>images/website-assets/win-icon3.png" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('images/website-assets/win-icon1.png')?>" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('images/website-assets/win-icon2.png')?>" alt="" class="win-icon">
+                        <img src="<?php echo get_public_url('images/website-assets/win-icon3.png')?>" alt="" class="win-icon">
                     </div>
                 </div>
                 <div class="window-content">
@@ -42,7 +42,7 @@ require('../../../app/init.php');
                                 </td>
                                 <td>$210.00</td>
                                 <td>$210.00</td>
-                                <td><img src="<?php echo get_public_url('')?>images/website-assets/trash.png" alt="" height="20px" width="auto"></td>
+                                <td><img src="<?php echo get_public_url('images/website-assets/trash.png')?>" alt="" height="20px" width="auto"></td>
                             </tr>
                         </table>
                         <table class="price-calculation">
@@ -80,26 +80,26 @@ require('../../../app/init.php');
                             <div class="method">
                                 <input id="afterpay" type="radio" value="afterpay">
                                 <label for="afterpay">
-                                    <img src="<?php echo get_public_url('')?>images/payment-icons/afterpay.png" alt="" height="15px">
+                                    <img src="<?php echo get_public_url('images/payment-icons/afterpay.png')?>" alt="" height="15px">
                                 </label>
                             </div>
                             <div class="method">
                                 <input id="klarna" type="radio" value="klarna">
                                 <label for="klarna">
-                                    <img src="<?php echo get_public_url('')?>images/payment-icons/klarna.png" alt="" height="15px">
+                                    <img src="<?php echo get_public_url('images/payment-icons/klarna.png')?>" alt="" height="15px">
                                 </label>
                             </div>
                             <div class="method">
                                 <input id="card" type="radio" value="credit/debit">
                                 <label for="afterpay">
-                                    <img src="<?php echo get_public_url('')?>images/payment-icons/card.png" alt="" height="15px">
+                                    <img src="<?php echo get_public_url('images/payment-icons/card.png')?>" alt="" height="15px">
                                     Credit/Debit Card
                                 </label>
                             </div>
                             <div class="method">
                                 <input id="paypal" type="radio" value="paypal">
                                 <label for="paypal">
-                                    <img src="<?php echo get_public_url('')?>images/payment-icons/paypal.png" alt="" height="15px">
+                                    <img src="<?php echo get_public_url('images/payment-icons/paypal.png')?>" alt="" height="15px">
                                 </label>
                             </div>
                         </div>
