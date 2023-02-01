@@ -8,10 +8,10 @@ require('../../app/init.php');
     <div class="bg"></div>
     <?php include('../partials/header.php'); ?>
     <main>
-        <section class="login-portal">
+        <section class="artist-list">
             <div class="window">
                 <div class="window-header">
-                    <h3 class="window-title is-small">Log-In</h3>
+                    <h3 class="window-title">Create Account</h3>
                     <div class="window-icons">
                         <img src="<?php echo get_public_url('/images/website-assets/win-icon1.png')?>" alt="" class="win-icon">
                         <img src="<?php echo get_public_url('/images/website-assets/win-icon2.png')?>" alt="" class="win-icon">
@@ -19,19 +19,12 @@ require('../../app/init.php');
                     </div>
                 </div>
                 <div class="window-content">
-                    <h3 class="txt-black">Login</h3>
-                    <div class="cta-input">
+                    <div>
                         <input type="text" name="" placeholder="Email Address">
                         <input type="text" name="" placeholder="Password">
                     </div>
-                    <a href="<?php echo get_public_url('/html/ticket/ticket-checkout.php')?>">
-                        <div class="btn scale-4">Login</div>
-                    </a>
-                    <a href="<?php echo get_public_url('/html/signup.php')?>">
-                        <div class="btn2">Sign Up</div>
-                    </a>
-                    <a class="guest-checkout" href="<?php echo get_public_url('/html/ticket/ticket-checkout.php')?>">Checkout as Guest</a>
                 </div>
+            </div>
         </section>
     </main>
     <?php include('../partials/footer.php'); ?>
