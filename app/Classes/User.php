@@ -32,7 +32,18 @@ class User {
 
     // Create new user
     public function create(){
-        $sql = "INSERT INTO users (name, username, email, password)";
+        $sql = "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?, ?)";
+        $stmt = self::$db->prepare($sql);
+        $stmt->bind_param('ssss', $this->$name, $this->username, $this->email, password_hash($this->password, PASSWORD_DEFAULT));
+        $stmt->execute();
+        $result = $stmt->insert_id;
+        return $result;
+    }
+
+    public function validate_password($form_password){
+
+        return password_verify($form_password, $this->password);
+
     }
 
     
