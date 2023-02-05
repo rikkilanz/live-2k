@@ -1,5 +1,4 @@
 <?php
-
 class User {
     static protected $db;
     
@@ -32,18 +31,28 @@ class User {
 
     // Create new user
     public function create(){
-        $sql = "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?)";
         $stmt = self::$db->prepare($sql);
-        $stmt->bind_param('ssss', $this->$name, $this->username, $this->email, password_hash($this->password, PASSWORD_DEFAULT));
+        $stmt->bind_param('ssss', $this->name, $this->username, $this->email, password_hash($this->password, PASSWORD_DEFAULT));
         $stmt->execute();
         $result = $stmt->insert_id;
         return $result;
+        // $sql = "INSERT INTO users (name, username, email, password) VALUES ('{$this->name}', '{$this->username}', '{$this->email}', '" . password_hash($this->password, PASSWORD_DEFAULT) . "')";
+        // $result = self::$db->query($sql);
+        // return $result;
     }
 
     public function validate_password($form_password){
 
         return password_verify($form_password, $this->password);
 
+    }
+
+    // update genre_id depending on user
+    public function set_genre($genre_id, $email){
+        $sql = "UPDATE users SET genre_id='{$genre_id}' WHERE email='{$email}' LIMIT 1";
+        $result = self::$db->query($sql);
+        return $result;
     }
 
     
