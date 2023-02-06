@@ -12,13 +12,20 @@ class User {
     static public function set_db($db) {
         self::$db = $db;
     }
-
     // Search user function
     public function find_user_by_email($email){
         $sql = "SELECT * FROM users WHERE email = '{$email}'";
         $result = self::$db->query($sql);
         return $result;
     }
+    
+    // Search id base on email and password?
+    public function find_user_id($email){
+        $sql = "SELECT id FROM users WHERE email='{$email}' LIMIT 1";
+        $result = self::$db->query($sql);
+        return $result->fetch_assoc();
+    }
+
     // Construct user when class is called
     public function __construct($args = []) {
         $this->id = $args['id'] ?? null;
@@ -37,9 +44,6 @@ class User {
         $stmt->execute();
         $result = $stmt->insert_id;
         return $result;
-        // $sql = "INSERT INTO users (name, username, email, password) VALUES ('{$this->name}', '{$this->username}', '{$this->email}', '" . password_hash($this->password, PASSWORD_DEFAULT) . "')";
-        // $result = self::$db->query($sql);
-        // return $result;
     }
 
     public function validate_password($form_password){
@@ -49,8 +53,9 @@ class User {
     }
 
     // update genre_id depending on user
-    public function set_genre($genre_id, $email){
-        $sql = "UPDATE users SET genre_id='{$genre_id}' WHERE email='{$email}' LIMIT 1";
+    public function set_genre($genre_id, $user_id){
+        // dd($user_id);
+        $sql = "UPDATE users SET genre_id='{$genre_id}' WHERE id='{$user_id}' LIMIT 1";
         $result = self::$db->query($sql);
         return $result;
     }

@@ -6,6 +6,7 @@
     require('functions.php');
 
     require('Classes/User.php');
+    require('Classes/Session.php');
 
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
@@ -14,6 +15,9 @@
 
     // initialize database
     $db = db_connect();
+
+    // Create new session when variable is called
+    $session = new Session();
 
     //Set Database on classes
     User::set_db($db);

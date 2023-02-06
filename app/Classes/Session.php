@@ -10,7 +10,6 @@
 
         public function login($id){
             session_regenerate_id();
-
             $this->user_id = $id;
             $_SESSION['user_id'] = $this->user_id;
 
@@ -24,7 +23,8 @@
 
         public function is_logged_in(){
             if(is_null($this->user_id)){
-                redirect('/users/login.php');
+                // log this back to log in
+                redirect('html/signup-sample.php');
             }else {
                 return true;
             }
