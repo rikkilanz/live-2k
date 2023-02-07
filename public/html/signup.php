@@ -19,14 +19,14 @@ require('../../app/init.php');
                     </div>
                 </div>
                 <div class="window-content">
-                    <div>
-                        <h4>WELCOME TO</h4>
+                    <div class="container logoSpace">
+                        <h4 >WELCOME TO</h4>
                         <img class="smlLogo" src="<?php echo get_public_url('/images/live2k_Logo_final.png')?>"  alt="Logo">
                         <h4>YOUR JOURNEY AWAITS...</h4>
                     </div>
-                    <div>
+                    <div class="container">
                         <form>
-                            <div class="flex container">    
+                            <div class="flex">    
                                 <div class="flex row">
                                     <div class="flex">
                                         <label for="fname">First Name</label>
@@ -54,11 +54,11 @@ require('../../app/init.php');
                                     </div>
                                     <div>
                                         <input type="checkbox" class="cbox" id="terms" name="terms">
-                                        <label for="terms">I have read and agree to the <a href="#">Terms & Privacy</a>.</label>
+                                        <label for="terms">I have read and agree to the <a class="href="#">Terms & Privacy</a>.</label>
                                     </div>
                                 </div>
                                 <div class="flex">
-                                    <button type="submit" class="btn">Create Account</button>
+                                    <button type="submit" class="btn3">Create Account</button>
                                 </div>
                             </div>
                             
