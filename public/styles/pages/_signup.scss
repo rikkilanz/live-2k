@@ -85,17 +85,17 @@ input::placeholder {
 .btn3 {
     background-color: #ED217C;
     border-radius: 25px;
-    width: 40%;
+    width: 100%;
     height: 100%;
-    padding: 10px;
-    margin: 20px;
+    padding: 12px;
+    margin: 20px 0;
     text-align: center;
     font-family: transducer-extended, sans-serif;
     font-weight: 900;
     font-style: italic;
     font-size: 20px;
     color: white;
-    align-self: center;
+    // align-self: center;
 }
 
 .signedIn {
@@ -104,4 +104,7 @@ input::placeholder {
     p{
         font-size: 13px;
     }
+}
+.center {
+    align-items: center;
 }
