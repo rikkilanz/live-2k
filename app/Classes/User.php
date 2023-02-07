@@ -13,8 +13,8 @@ class User {
         self::$db = $db;
     }
     // Search user function
-    public function find_user_by_email($email){
-        $sql = "SELECT * FROM users WHERE email = '{$email}'";
+    static public function find_user_by_email($email){
+        $sql = "SELECT * FROM users WHERE email='{$email}'";
         $result = self::$db->query($sql);
         return $result;
     }

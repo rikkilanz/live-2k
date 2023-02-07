@@ -7,6 +7,7 @@
 
     require('Classes/User.php');
     require('Classes/Session.php');
+    require('Classes/Artist.php');
 
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
@@ -21,3 +22,4 @@
 
     //Set Database on classes
     User::set_db($db);
+    Artist::set_db($db);

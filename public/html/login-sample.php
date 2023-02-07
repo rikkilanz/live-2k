@@ -5,21 +5,20 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
     // store requested user in a variable
     $requested_user = User::find_user_by_email($_POST['email']);
 
-    // // if the request contains a data, run the code block
-    // if($requested_user->num_rows == 1){
-    //     // put readable format into a variable
-    //     $user_data = $requested_user->fetch_assoc();
+    // if the request contains a data, run the code block
+    if($requested_user->num_rows == 1){
+        // put readable format into a variable
+        $user_data = $requested_user->fetch_assoc();
 
-    //     // create new user and store in variable
-    //     $user = new User($user_data);
+        // create new user and store in variable
+        $user = new User($user_data);
 
-    //     dd($user);
-
-    //     // if($user->validate_password($_POST['password'])){
-    //     //     // login new session
-    //     //     $session->login($user)
-    //     // };
-    // }
+        if($user->validate_password($_POST['password'])){
+            // login new session
+            $session->login($user);
+            redirect('/');
+        };
+    }
 }
 
 
