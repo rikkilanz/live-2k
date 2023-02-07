@@ -8,7 +8,7 @@ require('../../app/init.php');
     <div class="bg"></div>
     <?php include('../partials/header.php'); ?>
     <main>
-        <section class="artist-list">
+        <section class="signup-form">
             <div class="window">
                 <div class="window-header">
                     <h3 class="window-title">Create Account</h3>
