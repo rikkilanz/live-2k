@@ -41,5 +41,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <input type="checkbox" name="checkbox[]" value="5" id="genre5">
         <button type="submit">Submit</button>
     </form>
+    <section>
+        <!-- display user information here -->
+    </section>
 </body>
 </html>
