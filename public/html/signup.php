@@ -52,7 +52,7 @@ require('../../app/init.php');
                                         <input type="checkbox" class="cbox" id="terms" name="terms">
                                         <label for="terms">I would like to receive news and upcoming promotions for LIVE2K</label>
                                     </div>
-                                    <div>
+                                    <div class="check">
                                         <input type="checkbox" class="cbox" id="terms" name="terms">
                                         <label for="terms">I have read and agree to the <a class="lineLink" href="#">Terms & Privacy</a>.</label>
                                     </div>
@@ -62,7 +62,7 @@ require('../../app/init.php');
                                 </div>
                             </div>
                             
-                            <div class="flex">
+                            <div class="signedIn">
                                 <p>Already have an account? <a class="lineLink" href="#">Sign in</a>.</p>
                             </div>
                         </form>

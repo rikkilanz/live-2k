@@ -1224,6 +1224,8 @@ input {
 
 .check {
   font-size: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .cbox {
@@ -1285,6 +1287,13 @@ input::placeholder {
   font-size: 20px;
   color: white;
   align-self: center;
+}
+
+.signedIn {
+  text-align: center;
+}
+.signedIn p {
+  font-size: 13px;
 }
 
 /*
