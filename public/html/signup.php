@@ -20,8 +20,52 @@ require('../../app/init.php');
                 </div>
                 <div class="window-content">
                     <div>
-                        <input type="text" name="" placeholder="Email Address">
-                        <input type="text" name="" placeholder="Password">
+                        <h4>WELCOME TO</h4>
+                        <img class="smlLogo" src="<?php echo get_public_url('/images/live2k_Logo_final.png')?>"  alt="Logo">
+                        <h4>YOUR JOURNEY AWAITS...</h4>
+                    </div>
+                    <div>
+                        <form>
+                            <div class="flex container">    
+                                <div class="flex row">
+                                    <div class="flex">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" name="fname">
+                                    </div>
+                                    <div class="flex">
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" id="lname" name="lname">
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" name="email" id="email" required>
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" name="psw" id="psw" required>
+
+                                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                                    <input type="password" name="psw-repeat" id="psw-repeat" required>
+                                </div>
+                                <div class="flex">
+                                    <div class="check">
+                                        <input type="checkbox" class="cbox" id="terms" name="terms">
+                                        <label for="terms">I would like to receive news and upcoming promotions for LIVE2K</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" class="cbox" id="terms" name="terms">
+                                        <label for="terms">I have read and agree to the <a href="#">Terms & Privacy</a>.</label>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <button type="submit" class="btn">Create Account</button>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <p>Already have an account? <a href="#">Sign in</a>.</p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -346,12 +346,6 @@ a:hover {
   font-size: 15px;
 }
 
-.news input:-ms-input-placeholder {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-
 .news input::placeholder {
   font-family: transducer-extended, sans-serif;
   font-weight: 400;
@@ -728,12 +722,6 @@ a:hover {
   font-size: 15px;
 }
 
-.login-portal input:-ms-input-placeholder {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-
 .login-portal input::placeholder {
   font-family: transducer-extended, sans-serif;
   font-weight: 400;
@@ -998,13 +986,6 @@ a:hover {
   color: #8685A7;
 }
 
-.volunteer .input-groups input:-ms-input-placeholder {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #8685A7;
-}
-
 .volunteer .input-groups input::placeholder {
   font-family: transducer-extended, sans-serif;
   font-weight: 400;
@@ -1186,23 +1167,53 @@ h4 {
   color: rgb(0, 0, 0);
 }
 
+form {
+  width: 800px;
+}
+
+.smlLogo {
+  width: 500px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+}
+.flex .container {
+  align-self: center;
+}
+
+.row {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 input {
-  width: 400px;
+  width: auto;
   height: 50px;
   border: 0.75px solid rgb(66, 66, 66);
   border-radius: 30px;
-  position: relative;
-  padding: 0 25px;
-  margin: 10px 0px;
+  padding: 0 45px;
+  margin: 15px 0px;
+  background-color: rgba(103, 103, 104, 0.295);
+  font-size: 25px;
+}
+
+.check {
+  font-size: 20px;
+}
+
+.cbox {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(103, 103, 104, 0.295);
+  font-size: 20px;
+  margin: 15px 5px;
 }
 
 input::-moz-placeholder {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-
-input:-ms-input-placeholder {
   font-family: transducer-extended, sans-serif;
   font-weight: 400;
   font-size: 15px;
