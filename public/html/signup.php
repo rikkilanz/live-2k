@@ -54,7 +54,7 @@ require('../../app/init.php');
                                     </div>
                                     <div>
                                         <input type="checkbox" class="cbox" id="terms" name="terms">
-                                        <label for="terms">I have read and agree to the <a class="href="#">Terms & Privacy</a>.</label>
+                                        <label for="terms">I have read and agree to the <a class="lineLink" href="#">Terms & Privacy</a>.</label>
                                     </div>
                                 </div>
                                 <div class="flex">
@@ -63,7 +63,7 @@ require('../../app/init.php');
                             </div>
                             
                             <div class="flex">
-                                <p>Already have an account? <a href="#">Sign in</a>.</p>
+                                <p>Already have an account? <a class="lineLink" href="#">Sign in</a>.</p>
                             </div>
                         </form>
                     </div>

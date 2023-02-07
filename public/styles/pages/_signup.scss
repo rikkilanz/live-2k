@@ -28,7 +28,7 @@ input {
     border-radius: 30px;
     padding: 0 45px;
     margin: 15px 0px;
-    background-color: rgba(103, 103, 104, 0.295);
+    background-color: rgba(103, 103, 104, 0.108);
     font-size: 25px;
 }
 
@@ -39,7 +39,7 @@ input {
 .cbox {
     width: 30px;
     height: 30px;
-    background-color: rgba(103, 103, 104, 0.295);
+    background-color: rgba(103, 103, 104, 0.163);
     font-size: 20px;
     margin: 15px 5px;
 
@@ -66,7 +66,7 @@ input::placeholder {
         padding: 30px 0;
     }
 }
-a{
+.lineLink {
     color: #ED217C;
     text-decoration: underline;
 }
