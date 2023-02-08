@@ -75,6 +75,7 @@ input::placeholder {
         font-family: transducer-extended, sans-serif;
         font-style: normal;
         font-weight: 400;
+        text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
     }
 }
 .lineLink {
@@ -95,7 +96,6 @@ input::placeholder {
     font-style: italic;
     font-size: 20px;
     color: white;
-    // align-self: center;
 }
 
 .signedIn {

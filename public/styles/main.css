@@ -1278,6 +1278,7 @@ input::placeholder {
   font-family: transducer-extended, sans-serif;
   font-style: normal;
   font-weight: 400;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
 }
 
 .lineLink {
@@ -1309,6 +1310,47 @@ input::placeholder {
 
 .center {
   align-items: center;
+}
+
+.prefContainer {
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+  flex-direction: column;
+  margin: 30px 0px;
+}
+
+.prefBanner {
+  display: flex;
+  margin: 30px 500px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.bannerMsg h2 {
+  color: white;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 600;
+  font-family: transducer-bold, sans-serif;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
+  text-align: left;
+  line-height: 1;
+  margin: 60px 0;
+}
+.bannerMsg h4 {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: transducer-extended, sans-serif;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
+}
+
+.genreBanner img {
+  width: 400px;
+  height: auto;
 }
 
 /*
