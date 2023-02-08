@@ -11,9 +11,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $_POST['name'] = $name;
     // then you push the variable to create a new user
     $user = new User($_POST);
-    $user->create();
+    $user_id = $user->create();
     // Once we create, we find the corresponding email and id
-    $session->login($user->find_user_id($_POST['email']));
+
+    $session->login($user_id);
 
     redirect('html/artist-filter.php');
 }

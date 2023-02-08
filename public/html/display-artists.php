@@ -2,11 +2,32 @@
 
 require('../../app/init.php');
 
-$artists = Artist::find_artist_by_genre(2);
+// $session->is_logged_in();
 
-$artists2 = Artist::find_artist_by_stage(1);
+//Check who is the user logged in
+// dd($session);
 
-// dd($artists);
+//SELECT artists.name AS artist_name, genres.name AS genre_name FROM artists JOIN genres ON artists.genre_id = genres.id;
+
+if($session->is_logged_in()){
+    // figure out the user
+    $user_id = ($session->user_id);
+    $requested_user = User::find_user_by_id($user_id);
+    if($requested_user->num_rows == 1){
+        // put readable format into a variable
+        $user_data = $requested_user->fetch_assoc();
+
+        // create new user and store in variable
+        $user = new User($user_data);
+
+        $preferred_artists = Artist::find_artist_by_genre($user->genre_id);
+    }
+
+}
+else {
+    dd('not logged in');
+}
+
 
 ?>
 
@@ -20,19 +41,17 @@ $artists2 = Artist::find_artist_by_stage(1);
 </head>
 <body>
     <div>
-        <h2>By genre</h2>
+        <h1><?php echo $user->name ?> | <span>@<?php echo $user->username ?></span></h1>
+        <h3>Preferred Artists</h3>
         <?php 
-            while($artist = $artists->fetch_assoc()){
-                echo $artist['name'] . ' | Genre: ' . $artist['genre_id'] . '<br/>' ;
+            while($artist = $preferred_artists->fetch_assoc()){
+                echo 
+                
+                '<img width="50" height="50" src=' . get_public_url('/images/artist-photos/'). $artist['image_url'] . '.png' . ' >' . 
+                $artist['name'] . ' | Genre: ' . $artist['genre_id'] . ' | Stage: ' . $artist['stage'] . '<br/>';
             }
         ?>
         <hr>
-        <h2>By stage</h2>
-        <?php 
-            while($artist = $artists2->fetch_assoc()){
-                echo $artist['name'] . ' | Stage: ' . $artist['stage'] . '<br/>' ;
-            }
-        ?>
     </div>
 </body>
 </html>

@@ -7,6 +7,7 @@
         public $name;
         public $stage;
         public $genre_id;
+        public $image_url;
 
         static public function set_db($db){
             self::$db = $db;
@@ -17,6 +18,7 @@
             $this->name = $args['name'] ?? null;
             $this->stage = $args['stage'] ?? null;
             $this->genre_id = $args['genre_id'] ?? null;
+            $this->image_url = $args['image_url'] ?? null;
         }
         
         static public function find_artist_by_genre($genre_id){

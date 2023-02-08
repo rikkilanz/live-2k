@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
 
         if($user->validate_password($_POST['password'])){
             // login new session
-            $session->login($user);
+            $session->login($user->id);
             redirect('/');
         };
     }

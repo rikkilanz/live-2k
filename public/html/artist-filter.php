@@ -5,7 +5,7 @@ require('../../app/init.php');
 $session->is_logged_in();
 
 //current seesion user id stored in a variable
-$user_id = ($session->user_id["id"]);
+$user_id = ($session->user_id);
 // Put selected genre to user preferred genre_id
 
 // once submit is hit, we want to place selected value by user to genre id
@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $genre_id = $_POST['checkbox'];
     $user = new User();
     $user->set_genre($genre_id[0], $user_id);
-    redirect('/');
+    redirect('html/display-artists.php');
 }
 
 ?>

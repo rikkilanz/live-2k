@@ -24,7 +24,7 @@
         public function is_logged_in(){
             if(is_null($this->user_id)){
                 // log this back to log in
-                redirect('html/signup-sample.php');
+                redirect('html/login-sample.php');
             }else {
                 return true;
             }

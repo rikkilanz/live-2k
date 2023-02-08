@@ -18,6 +18,12 @@ class User {
         $result = self::$db->query($sql);
         return $result;
     }
+
+    static public function find_user_by_id($id){
+        $sql = "SELECT * FROM users WHERE id='{$id}'";
+        $result = self::$db->query($sql);
+        return $result;
+    }
     
     // Search id base on email and password?
     public function find_user_id($email){

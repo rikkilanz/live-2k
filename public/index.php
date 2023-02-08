@@ -1,8 +1,6 @@
 <?php
 require('../app/init.php');
 
-// if user is logged in. change header to active user
-
 ?>
 
 <!DOCTYPE html>
