@@ -5,20 +5,24 @@
     margin-top: 100px;
     flex-direction: column;
     margin: 30px 0px;
+
+
+
 }
 .prefBanner{
     display: flex;
-    margin: 30px 500px;
-    justify-content: center;
+    margin: 0 10%;
+    justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.788);
+    // padding: 20px;
 
 }
-.bannerMsg{
+.prefContainer{
+    text-transform: uppercase;
     h2{
-        
         color: white;
-        font-size: 80px ;
+        font-size: 100px ;
         font-style: italic;
         font-weight: 600;
         font-family: transducer-bold, sans-serif;
@@ -29,7 +33,7 @@
     }
     h4{
         color: white;
-        font-size: 30px ;
+        font-size: 35px ;
         font-weight: 300;
         font-style: italic;
         font-family: transducer-extended, sans-serif;
@@ -38,7 +42,55 @@
 }
 .genreBanner img {
 
-    width: 400px;
+    width: 600px;
     height: auto;
-   }
+}
+
+   .prefSelect {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    // justify-content: center;
+    align-items: center;
+        h4{
+            font-weight: 500;
+        }
+}
+.genreBtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+    .gBtn{
+        background-color: white;
+        border-radius: 10px;
+        border: #ED217C solid 5px;
+        width: 300px;
+        height: auto;
+        padding: 10px ;
+        margin: 30px 100px;
+        text-align: center;
+        font-family: transducer-extended, sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 20px;
+        color: #ED217C;
+    }
+}
+.genreSub{
+    .subBtn{
+        background-color: #ED217C;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        height: 100%;
+        padding: 10px 200px;
+        text-align: center;
+        font-family: transducer-extended, sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 20px;
+        color: white;
+    }
+}
 

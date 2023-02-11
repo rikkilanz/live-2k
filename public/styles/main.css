@@ -346,12 +346,6 @@ a:hover {
   font-size: 15px;
 }
 
-.news input:-ms-input-placeholder {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-
 .news input::placeholder {
   font-family: transducer-extended, sans-serif;
   font-weight: 400;
@@ -728,12 +722,6 @@ a:hover {
   font-size: 15px;
 }
 
-.login-portal input:-ms-input-placeholder {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-
 .login-portal input::placeholder {
   font-family: transducer-extended, sans-serif;
   font-weight: 400;
@@ -998,13 +986,6 @@ a:hover {
   color: #8685A7;
 }
 
-.volunteer .input-groups input:-ms-input-placeholder {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #8685A7;
-}
-
 .volunteer .input-groups input::placeholder {
   font-family: transducer-extended, sans-serif;
   font-weight: 400;
@@ -1242,12 +1223,6 @@ input::-moz-placeholder {
   font-size: 15px;
 }
 
-input:-ms-input-placeholder {
-  font-family: transducer-extended, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-
 input::placeholder {
   font-family: transducer-extended, sans-serif;
   font-weight: 400;
@@ -1322,15 +1297,18 @@ input::placeholder {
 
 .prefBanner {
   display: flex;
-  margin: 30px 500px;
-  justify-content: center;
+  margin: 0 10%;
+  justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.788);
 }
 
-.bannerMsg h2 {
+.prefContainer {
+  text-transform: uppercase;
+}
+.prefContainer h2 {
   color: white;
-  font-size: 80px;
+  font-size: 100px;
   font-style: italic;
   font-weight: 600;
   font-family: transducer-bold, sans-serif;
@@ -1339,9 +1317,9 @@ input::placeholder {
   line-height: 1;
   margin: 60px 0;
 }
-.bannerMsg h4 {
+.prefContainer h4 {
   color: white;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 300;
   font-style: italic;
   font-family: transducer-extended, sans-serif;
@@ -1349,8 +1327,55 @@ input::placeholder {
 }
 
 .genreBanner img {
-  width: 400px;
+  width: 600px;
   height: auto;
+}
+
+.prefSelect {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+}
+.prefSelect h4 {
+  font-weight: 500;
+}
+
+.genreBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 0;
+}
+.genreBtn .gBtn {
+  background-color: white;
+  border-radius: 10px;
+  border: #ED217C solid 5px;
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  margin: 30px 100px;
+  text-align: center;
+  font-family: transducer-extended, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 20px;
+  color: #ED217C;
+}
+
+.genreSub .subBtn {
+  background-color: #ED217C;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  padding: 10px 200px;
+  text-align: center;
+  font-family: transducer-extended, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+  color: white;
 }
 
 /*

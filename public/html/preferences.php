@@ -17,8 +17,20 @@ require('../../app/init.php');
                 <img src="<?php echo get_public_url('/images/genre-banner-img.png')?>"  alt="genre_banner">
             </div>
         </section>
-        <section>
-            <p>preferences</p>
+        <section class="prefSelect">
+            <div class="subHeading">
+                <h4>select your preferred music genre</h4>
+            </div>
+            <div class="genreBtn">
+                    <button class="gBtn">Hip Hop</button>
+                    <button class="gBtn">Rock</button>
+                    <button class="gBtn">Pop</button>
+                    <button class="gBtn">Dance</button>
+                    <button class="gBtn">RNB</button>
+            </div>
+            <div class="genreSub">
+                <button class="subBtn">Submit</button>
+            </div>
         </section>
 
     </main>
