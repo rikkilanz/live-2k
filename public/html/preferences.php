@@ -22,11 +22,11 @@ require('../../app/init.php');
                 <h4>select your preferred music genre</h4>
             </div>
             <div id="genreBtn">
-                    <button class="gBtn active">Hip Hop</button>
-                    <button class="gBtn">Rock</button>
-                    <button class="gBtn">Pop</button>
-                    <button class="gBtn">Dance</button>
-                    <button class="gBtn">RNB</button>
+                    <button class="gBtn" onclick="tgl(event)">Hip Hop</button>
+                    <button class="gBtn" onclick="tgl(event)">Rock</button>
+                    <button class="gBtn" onclick="tgl(event)">Pop</button>
+                    <button class="gBtn" onclick="tgl(event)">Dance</button>
+                    <button class="gBtn" onclick="tgl(event)">RNB</button>
             </div>
             <div class="genreSub">
                 <button id="subBtn">Submit</button>
@@ -37,19 +37,43 @@ require('../../app/init.php');
     <?php include('../partials/footer.php'); ?>
 </body>
 <script>
-    var list = document.getElementById("genreBtn");
+//     var list = document.getElementById("genreBtn");
 
-    var btns = list.getElementsByClassName("gBtn");
+//     var btns = list.getElementsByClassName("gBtn");
 
-    for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
+//     for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click", function() {
+//     var current = document.getElementsByClassName("active");
 
-    current[0].className = current[0].className.replace("active", "");
-    this.className += " active";
-    });
+//     current[0].className = current[0].className.replace("active", "");
+//     this.className += " active";
+//     });
+// }
+
+var count = 0;
+
+function tgl(event) {
+  const el = event.target;
+
+  if(el.classList.contains('active')){
+    el.removeAttribute('class', 'active');
+    count--;
+    // count = count - 1
+  }else{
+    el.setAttribute('class', 'active');
+    count++;
+    // count = count + 1
+  }
+
+//   console.log(count);
+
+  if(count == 0){
+    document.getElementById('subBtn').classList.remove('rdy');
+  }else{
+    document.getElementById('subBtn').classList.add('rdy');
+  }
 }
-    
+
  
 </script>
 </html>
