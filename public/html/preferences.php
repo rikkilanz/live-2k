@@ -21,19 +21,35 @@ require('../../app/init.php');
             <div class="subHeading">
                 <h4>select your preferred music genre</h4>
             </div>
-            <div class="genreBtn">
-                    <button class="gBtn">Hip Hop</button>
+            <div id="genreBtn">
+                    <button class="gBtn active">Hip Hop</button>
                     <button class="gBtn">Rock</button>
                     <button class="gBtn">Pop</button>
                     <button class="gBtn">Dance</button>
                     <button class="gBtn">RNB</button>
             </div>
             <div class="genreSub">
-                <button class="subBtn">Submit</button>
+                <button id="subBtn">Submit</button>
             </div>
         </section>
 
     </main>
     <?php include('../partials/footer.php'); ?>
 </body>
+<script>
+    var list = document.getElementById("genreBtn");
+
+    var btns = list.getElementsByClassName("gBtn");
+
+    for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+
+    current[0].className = current[0].className.replace("active", "");
+    this.className += " active";
+    });
+}
+    
+ 
+</script>
 </html>
