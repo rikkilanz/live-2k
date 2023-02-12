@@ -1639,6 +1639,7 @@ input::placeholder {
 .nav-bar {
   display: flex;
   flex-direction: row;
+  margin-left: 4%;
 }
 
 .nav-bar li {
@@ -1679,6 +1680,22 @@ input::placeholder {
 
 .nav-bar .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.prof {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+.prof img {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  padding: 1%;
+}
+.prof p {
+  font-size: 10px;
 }
 
 /*

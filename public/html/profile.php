@@ -59,7 +59,7 @@ require('../../app/init.php');
               
                 <div class="changeGenre">
                     <h4>Want different acts?</h4>
-                    <a href="#"><p>Change genre</p></a>
+                    <a href="<?php echo get_public_url('/html/preferences.php')?>"><p>Change genre</p></a>
                 </div>
             </div>
         </section>

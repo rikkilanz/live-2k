@@ -29,7 +29,7 @@ require('../../app/init.php');
                     <button class="gBtn" onclick="tgl(event)">RNB</button>
             </div>
             <div class="genreSub">
-                <button id="subBtn">Submit</button>
+                <a href="<?php echo get_public_url('/html/profile.php')?>"><button id="subBtn">Submit</button></a>
             </div>
         </section>
 
