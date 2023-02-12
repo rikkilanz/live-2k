@@ -1387,6 +1387,201 @@ input::placeholder {
   background-color: #ED217C;
 }
 
+.profileContainer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.profInfo {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 10%;
+  padding: 30px 0;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.788);
+}
+
+.profPic {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 2px solid black;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.profPic img {
+  width: 300px;
+  height: auto;
+}
+
+.profTxt {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  margin-left: 50px;
+}
+.profTxt h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: transducer-extended, sans-serif;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
+  text-align: left;
+  line-height: 1;
+}
+.profTxt h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: transducer-extended, sans-serif;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
+  text-align: left;
+  font-style: normal;
+  line-height: 1;
+  margin: 5% 0;
+}
+.profTxt button {
+  background-color: #ED217C;
+  border-radius: 10px;
+  border: #ED217C solid 5px;
+  width: 150px;
+  height: auto;
+  padding: 5px 10px;
+  margin: 10px;
+  text-align: center;
+  font-family: transducer-extended, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 13px;
+  color: white;
+}
+
+.actList {
+  display: flex;
+  flex-direction: column;
+}
+.actList .window {
+  margin: 25px 300px;
+}
+.actList h3 {
+  text-transform: uppercase;
+  align-self: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: transducer-extended, sans-serif;
+  text-shadow: rgba(103, 103, 104, 0.219) 2px 2px;
+  text-align: left;
+  font-style: normal;
+  line-height: 1;
+}
+.actList .window-content {
+  flex-direction: column;
+}
+.actList .window-content h3 {
+  color: #ED217C;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 600;
+  font-family: transducer-extended, sans-serif;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
+  text-align: left;
+  line-height: 1;
+  margin: 40px 0;
+}
+
+.titleTags {
+  display: flex;
+  flex-direction: row;
+  width: 88%;
+  height: auto;
+  justify-content: space-around;
+  margin-left: 8%;
+}
+.titleTags .grow {
+  flex-grow: 1;
+  text-align: center;
+}
+.titleTags h4 {
+  color: #858585;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+  font-family: transducer-bold, sans-serif;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
+  text-align: left;
+  margin: 40px 0;
+  padding: 0 7%;
+}
+
+.acts {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid #858585;
+  border-radius: 15px;
+  margin: 1.5% 0;
+  padding: 1% 0;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.acts h2 {
+  font-family: transducer-bold, sans-serif;
+  color: white;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
+  font-size: 50px;
+  text-decoration: underline;
+}
+.acts h4 {
+  font-family: transducer-bold, sans-serif;
+  color: white;
+  text-shadow: rgba(103, 103, 104, 0.108) 2px 2px;
+}
+.acts .artPic {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 2px solid black;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.acts .artPic img {
+  width: 100px;
+  height: auto;
+}
+
+.changeGenre {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: auto;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 2% 0;
+}
+.changeGenre h4 {
+  font-family: transducer-extended, sans-serif;
+  color: #ED217C;
+  text-transform: uppercase;
+}
+.changeGenre p {
+  color: #ED217C;
+  font-family: transducer-extended, sans-serif;
+  padding: 0 10px;
+  text-decoration: underline;
+}
+
 /*
     Styles
 */
