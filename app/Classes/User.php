@@ -1,5 +1,4 @@
 <?php
-
 class User {
     static protected $db;
     
@@ -13,13 +12,26 @@ class User {
     static public function set_db($db) {
         self::$db = $db;
     }
-
     // Search user function
-    public function find_user_by_email($email){
-        $sql = "SELECT * FROM users WHERE email = '{$email}'";
+    static public function find_user_by_email($email){
+        $sql = "SELECT * FROM users WHERE email='{$email}'";
         $result = self::$db->query($sql);
         return $result;
     }
+
+    static public function find_user_by_id($id){
+        $sql = "SELECT * FROM users WHERE id='{$id}'";
+        $result = self::$db->query($sql);
+        return $result;
+    }
+    
+    // Search id base on email and password?
+    public function find_user_id($email){
+        $sql = "SELECT id FROM users WHERE email='{$email}' LIMIT 1";
+        $result = self::$db->query($sql);
+        return $result->fetch_assoc();
+    }
+
     // Construct user when class is called
     public function __construct($args = []) {
         $this->id = $args['id'] ?? null;
@@ -32,9 +44,9 @@ class User {
 
     // Create new user
     public function create(){
-        $sql = "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?)";
         $stmt = self::$db->prepare($sql);
-        $stmt->bind_param('ssss', $this->$name, $this->username, $this->email, password_hash($this->password, PASSWORD_DEFAULT));
+        $stmt->bind_param('ssss', $this->name, $this->username, $this->email, password_hash($this->password, PASSWORD_DEFAULT));
         $stmt->execute();
         $result = $stmt->insert_id;
         return $result;
@@ -44,6 +56,14 @@ class User {
 
         return password_verify($form_password, $this->password);
 
+    }
+
+    // update genre_id depending on user
+    public function set_genre($genre_id, $user_id){
+        // dd($user_id);
+        $sql = "UPDATE users SET genre_id='{$genre_id}' WHERE id='{$user_id}' LIMIT 1";
+        $result = self::$db->query($sql);
+        return $result;
     }
 
     

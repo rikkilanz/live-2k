@@ -6,8 +6,20 @@
     require('functions.php');
 
     require('Classes/User.php');
+    require('Classes/Session.php');
+    require('Classes/Artist.php');
 
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
     define('DB_PASS', 'root');
     define('DB_NAME', 'live_2k');
+
+    // initialize database
+    $db = db_connect();
+
+    // Create new session when variable is called
+    $session = new Session();
+
+    //Set Database on classes
+    User::set_db($db);
+    Artist::set_db($db);

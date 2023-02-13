@@ -1,5 +1,6 @@
 <?php
 require('../app/init.php');
+
 ?>
 
 <!DOCTYPE html>

@@ -20,6 +20,17 @@ function get_path($path = "") {
     return PROJECT_ROOT . $path;
 }
 
+// Prints out human readable data wrapped in <pre> tags, for debugging
+function wrap_pre($data) {
+    return '<pre>' . print_r($data,true) . '</pre>';
+}
+
+// Prints out human readable data, and prevents the script from continuing
+function dd($data) {
+    echo wrap_pre($data);
+    die();
+}
+
 // Add Database Connection function here
 // ----------
 // This is a function we created to connect to the SQL database
