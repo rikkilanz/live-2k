@@ -23,7 +23,7 @@ require('../../../app/init.php');
                         <p>Ready to checkout?</p>
                         <div class="buttons">
                             <a href="<?php echo get_public_url('/html/tickets.php')?>" class="btn2">Add More Tickets</a>
-                            <a href="<?php echo get_public_url('/html/login.php')?>" class="btn">Check Me Out!</a>
+                            <a href="<?php echo get_public_url('/html/ticket/ticket-checkout.php')?>" class="btn">Check Me Out!</a>
                         </div>
                     </div>
                 </div>

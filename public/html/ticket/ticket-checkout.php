@@ -1,5 +1,10 @@
 <?php
 require('../../../app/init.php');
+
+if(!$session->is_logged_in()){
+    redirect('/html/login.php');
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

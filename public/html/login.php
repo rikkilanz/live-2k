@@ -1,6 +1,10 @@
 <?php
 require('../../app/init.php');
 
+// if($session->is_logged_in()) {
+//     redirect('/html/profile.php');
+// }
+
 $login_validate = true;
 
 if($_SERVER["REQUEST_METHOD"] == 'POST'){
@@ -17,7 +21,9 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
             // login new session
             $session->login($user->id);
             redirect('/');
-        };
+        }else {
+            $login_validate = false;
+        }
     }else {
         $login_validate = false;
     }
