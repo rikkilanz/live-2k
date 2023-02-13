@@ -3,6 +3,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
+    margin-top: 130px;
 }
 
 .profInfo{
@@ -10,9 +11,12 @@
     flex-direction: row;
     margin: 2% 10%;
     padding: 30px 0;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgba(112, 112, 112, 0.788);
+    // form{
+    //     width: 100%;
+    // }
 }
 
 .profPic {
@@ -34,7 +38,7 @@
 .profTxt{
     display: flex;
     flex-direction: column;
-    align-content: left;
+    align-items: left;
     margin-left: 50px;
     h1{
         color: white;
@@ -57,7 +61,7 @@
         margin: 5% 0;
 
     }
-    button{
+    .edit-preference{
         background-color: #ED217C;
         border-radius: 10px;
         border: #ED217C solid 5px;
@@ -71,6 +75,11 @@
         font-style: italic;
         font-size: 13px;
         color: white;
+    }
+    .logout {
+        background-color: white;
+        color: #ED217C;
+        border: #ED217C solid 5px;
     }
 }
 
@@ -149,6 +158,9 @@
     padding: 1% 0;
     overflow: hidden;
     text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     h2{
         font-family: transducer-bold, sans-serif;

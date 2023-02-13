@@ -1,5 +1,21 @@
 <?php
 require('../../app/init.php');
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    // Divide the two name variables
+    $fname = $_POST['fname'];
+    $lname =  $_POST['lname'];
+    // Concatenate in one
+    $name = $fname . " " . $lname;
+    //Store it in that constructor variable
+    $_POST['name'] = $name;
+    // then you push the variable to create a new user
+    $user = new User($_POST);
+    $user_id = $user->create();
+    // Once we create, we find the corresponding email and id
+    $session->login($user_id);
+    redirect('html/preferences.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +41,7 @@ require('../../app/init.php');
                         <h4>YOUR JOURNEY AWAITS...</h4>
                     </div>
                     <div class="container">
-                        <form>
+                        <form action="<?php echo get_public_url('html/signup.php') ?>" method="POST">
                             <div class="flex">    
                                 <div class="flex row">
                                     <div class="flex">
@@ -41,11 +57,14 @@ require('../../app/init.php');
                                     <label for="email"><b>Email</b></label>
                                     <input type="text" name="email" id="email" required>
 
+                                    <label for="email"><b>Username</b></label>
+                                    <input type="text" name="username" id="username" required>
+
                                     <label for="psw"><b>Password</b></label>
-                                    <input type="password" name="psw" id="psw" required>
+                                    <input type="password" name="password" id="psw" required>
 
                                     <label for="psw-repeat"><b>Repeat Password</b></label>
-                                    <input type="password" name="psw-repeat" id="psw-repeat" required>
+                                    <input type="password" name="password-repeat" id="psw-repeat" required>
                                 </div>
                                 <div class="flex">
                                     <div class="check">
@@ -58,10 +77,9 @@ require('../../app/init.php');
                                     </div>
                                 </div>
                                 <div class="flex center">
-                                    <a href="preferences.php"><button type="submit" class="btn3">Create Account</button></a>
+                                    <button type="submit" class="btn3">Create Account</button>
                                 </div>
                             </div>
-                            
                             <div class="signedIn">
                                 <p>Already have an account? <a class="lineLink" href="login.php">Sign in</a>.</p>
                             </div>

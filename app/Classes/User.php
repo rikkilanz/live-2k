@@ -24,6 +24,13 @@ class User {
         $result = self::$db->query($sql);
         return $result;
     }
+
+    static public function set_preference($genre_id){
+        $sql = "SELECT artists.name AS artist_name, genres.name AS genre_name FROM artists JOIN genres ON artists.genre_id = genres.id WHERE genre_id='{$genre_id}'";
+        // dd($sql);
+        $result = self::$db->query($sql);
+        return $result->fetch_assoc();
+    }
     
     // Search id base on email and password?
     public function find_user_id($email){

@@ -1,5 +1,20 @@
 <?php
 require('../../app/init.php');
+// Check session
+$session->is_logged_in();
+
+//current seesion user id stored in a variable
+$user_id = ($session->user_id);
+// Put selected genre to user preferred genre_id
+
+// once submit is hit, we want to place selected value by user to genre id
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $genre_id = $_POST['checkbox'];
+    $user = new User();
+    $user->set_genre($genre_id[0], $user_id);
+    redirect('html/profile.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,16 +36,28 @@ require('../../app/init.php');
             <div class="subHeading">
                 <h4>select your preferred music genre</h4>
             </div>
-            <div id="genreBtn">
-                    <button class="gBtn" onclick="tgl(event)">Hip Hop</button>
-                    <button class="gBtn" onclick="tgl(event)">Rock</button>
-                    <button class="gBtn" onclick="tgl(event)">Pop</button>
-                    <button class="gBtn" onclick="tgl(event)">Dance</button>
-                    <button class="gBtn" onclick="tgl(event)">RNB</button>
-            </div>
-            <div class="genreSub">
-                <a href="<?php echo get_public_url('/html/profile.php')?>"><button id="subBtn">Submit</button></a>
-            </div>
+            <form action="<?php echo get_public_url('html/preferences.php') ?>" method="POST">
+              <div id="genreBtn">
+                  <label onclick="tgl(event)">
+                    <input type="checkbox" name="checkbox[]" value="1" ><span>POP</span>
+                  </label>
+                  <label onclick="tgl(event)">
+                    <input type="checkbox" name="checkbox[]" value="2"><span>HIP HOP</span>
+                  </label>
+                  <label onclick="tgl(event)">
+                    <input type="checkbox" name="checkbox[]" value="3"><span>ROCK</span>
+                  </label>
+                  <label onclick="tgl(event)">
+                    <input type="checkbox" name="checkbox[]" value="4"><span>DANCE</span>
+                  </label>
+                  <label onclick="tgl(event)">
+                    <input type="checkbox" name="checkbox[]" value="5"><span>RNB</span>
+                  </label>
+              </div>
+              <div class="genreSub">
+                  <button type="submit" id="subBtn">Submit</button>
+              </div>
+            </form>
         </section>
 
     </main>

@@ -33,13 +33,19 @@
             </div>
         </li>
         <li class="prof">
-            <div>
-                <a href="<?php echo get_public_url('/html/profile.php')?>">
-                    <img src="<?php echo get_public_url('/images/UserIcon_live2k.png')?>" alt="profile-icon">
-                </a>
-            </div>
-            <a href="<?php echo get_public_url('/html/login.php')?>"><p>Login/Sign Up</p></a>
-            
+            <?php 
+                if($session->is_logged_in()){
+                    echo 
+                        '<div>'.
+                            '<a href="' . get_public_url('/html/profile.php') . '">' .
+                                '<img src="' .get_public_url('/images/UserIcon_live2k.png') .'" alt="profile-icon">
+                            </a>
+                        </div>';
+                }else {
+                    echo
+                        '<a href="' . get_public_url('/html/login.php') . '"><p>Login/Sign Up</p></a>';
+                }
+            ?>
         </li>
     </ul>
 </header>

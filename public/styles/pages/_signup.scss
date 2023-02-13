@@ -1,5 +1,7 @@
-form {
-    width: 800px;
+.signup-form {
+    form {
+        width: 800px;
+    }
 }
 .smlLogo{
     width: 500px;
@@ -107,4 +109,18 @@ input::placeholder {
 }
 .center {
     align-items: center;
+}
+
+.login-portal {
+    .window-content{
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            button {
+                align-self: center;
+            }
+        }
+    }
 }
