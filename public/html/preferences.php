@@ -64,18 +64,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <?php include('../partials/footer.php'); ?>
 </body>
 <script>
-//     var list = document.getElementById("genreBtn");
-
-//     var btns = list.getElementsByClassName("gBtn");
-
-//     for (var i = 0; i < btns.length; i++) {
-//     btns[i].addEventListener("click", function() {
-//     var current = document.getElementsByClassName("active");
-
-//     current[0].className = current[0].className.replace("active", "");
-//     this.className += " active";
-//     });
-// }
 
 var count = 0;
 
@@ -85,14 +73,10 @@ function tgl(event) {
   if(el.classList.contains('active')){
     el.removeAttribute('class', 'active');
     count--;
-    // count = count - 1
   }else{
     el.setAttribute('class', 'active');
     count++;
-    // count = count + 1
   }
-
-//   console.log(count);
 
   if(count == 0){
     document.getElementById('subBtn').classList.remove('rdy');
